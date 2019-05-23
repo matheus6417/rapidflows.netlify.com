@@ -1,21 +1,4 @@
-﻿/*! CSS Used from: http://127.0.0.1:1717/style.css?_cacheOverride=1558459773708 */
-b,label{font-weight:700;}
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;height:100%;}
-body{margin:0;min-height:100%;}
-nav{display:block;}
-a{background-color:transparent;}
-a:active,a:hover{outline:0;}
-h1{margin:.67em 0;}
-img{border:0;max-width:100%;vertical-align:middle;display:inline-block;}
-svg:not(:root){overflow:hidden;}
-button,input{color:inherit;font:inherit;margin:0;}
-button{overflow:visible;}
-button{text-transform:none;}
-html input[disabled]{cursor:default;}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
-input{line-height:normal;}
-input[type=checkbox]{box-sizing:border-box;padding:0;}
-[class*=" w-icon-"],[class^=w-icon-]{font-family:webflow-icons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+﻿
 .w-icon-nav-menu:before{content:"\e602";}
 .w-icon-dropdown-toggle:before{content:"\e603";}
 .w-clearfix:after,.w-clearfix:before{content:" ";grid-column-start:1;grid-row-start:1;grid-column-end:2;grid-row-end:2;}
@@ -102,8 +85,8 @@ p{margin-bottom:20px;}
 a{color:#52d2bc;text-decoration:underline;}
 .navbar{position:fixed;left:0;top:0;right:0;display:block;height:87px;padding-top:25px;padding-right:55px;padding-left:55px;border-bottom:1px solid #ebebeb;background-color:#fff;}
 .container,.hero-section{position:relative;display:block;}
-.logo-block{display:block;}
-.logo{width:210px;height:auto;margin-top:0;}
+.logo-block{display:block;height: 30px;width: auto;}
+.logo{width: auto;height: 46px;margin-top:0;}
 .nav-menu{margin-top:-1px;background-color:transparent;}
 .nav-link{margin-left:25px;padding:7px 0 3px;border-bottom:2px solid transparent;-webkit-transition:color .2s ease;transition:color .2s ease;font-size:15px;}
 .nav-link:hover{border-bottom-color:#52d2bc;color:#216ef4;}
@@ -123,7 +106,6 @@ a{color:#52d2bc;text-decoration:underline;}
 .website-wrapper{display:block;overflow:hidden;margin-right:auto;margin-left:auto;}
 .section{padding-top:130px;padding-bottom:130px;}
 .section.tint{background-color:#f4f5f8;}
-.section.footer{background-color:#07265d;}
 .section.footer{padding-top:220px;padding-bottom:60px;color:#fff;font-size:14px;line-height:22px;}
 .section.press-section{padding-top:120px;padding-bottom:20px;}
 .hero-title{color:#216ef4;font-size:55px;line-height:61px;font-weight:500;}
@@ -293,7 +275,7 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 }
 @media (max-width:767px){
 .navbar{height:60px;padding-left:5px;}
-.logo{width:160px;margin-top:15px;}
+.logo{width: 36px;margin-top: 4px;}
 .nav-link{padding-top:7px;padding-bottom:7px;line-height:35px;}
 .nav-link.cta-nav-link{margin-left:0;padding:7px 10px 7px 30px;font-size:16px;line-height:35px;}
 .nav-link.cta-nav-link.register{top:0;height:auto;margin-top:0;margin-right:0;margin-left:0;padding-top:7px;padding-left:30px;border-width:0;background-color:transparent;color:#8792a5;line-height:35px;}
@@ -399,15 +381,3 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 .footer-paragraph{display:block;max-width:330px;}
 .request-demo-text{max-width:230px;font-size:13px;line-height:20px;}
 }
-/*! CSS Used from: https://calendly.com/assets/external/widget.css?_cacheOverride=1558459773710 */
-html,body{height:100%;}
-body{overflow:auto;}
-/*! CSS Used fontfaces */
-@font-face{font-family:webflow-icons;src:url("data:application/x-font-ttf;charset=utf-8;base64,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") format('truetype');font-weight:400;font-style:normal;}
-@font-face{font-family:'Radikal';src:url('https://uploads-ssl.webflow.com/5aabfbb0b2d9ac916e4c45c8/5aaf71a6ca4ae1995048bf52_Radikal-UltraThin.otf') format('opentype'), url('https://uploads-ssl.webflow.com/5aabfbb0b2d9ac916e4c45c8/5aaf71a62e1ff9178679f367_Radikal-Thin.otf') format('opentype');font-weight:100;font-style:normal;}
-@font-face{font-family:'Radikal';src:url('https://uploads-ssl.webflow.com/5aabfbb0b2d9ac916e4c45c8/5aaf71a6af97837b67247067_Radikal-Black.otf') format('opentype');font-weight:900;font-style:normal;}
-@font-face{font-family:'Radikal';src:url('https://uploads-ssl.webflow.com/5aabfbb0b2d9ac916e4c45c8/5aaf71a6ca4ae161cb48bf51_Radikal-Regular.otf') format('opentype');font-weight:400;font-style:normal;}
-@font-face{font-family:'Radikal';src:url('https://uploads-ssl.webflow.com/5aabfbb0b2d9ac916e4c45c8/5aaf71a6c776ccb48b8efe1a_Radikal-Light.otf') format('opentype');font-weight:300;font-style:normal;}
-@font-face{font-family:'Radikal';src:url('https://uploads-ssl.webflow.com/5aabfbb0b2d9ac916e4c45c8/5aaf71a62e1ff9a20c79f365_Radikal-Bold.otf') format('opentype');font-weight:700;font-style:normal;}
-@font-face{font-family:'Radikal';src:url('https://uploads-ssl.webflow.com/5aabfbb0b2d9ac916e4c45c8/5aaf71a62e1ff96fba79f366_Radikal-Medium.otf') format('opentype');font-weight:500;font-style:normal;}
-@font-face{font-family:'Radikal';src:url('https://uploads-ssl.webflow.com/5aabfbb0b2d9ac916e4c45c8/5aaf71a63164e14212046716_Radikal-RegularItalic.otf') format('opentype');font-weight:400;font-style:italic;}
