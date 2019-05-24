@@ -27,7 +27,7 @@
 		<link href="css/style.css"
 			  rel="stylesheet"
 			  type="text/css">
-			  <link href="css/temp.css"
+		<link href="css/temp.css"
 			  rel="stylesheet"
 			  type="text/css">
 		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
@@ -50,16 +50,63 @@
 			   class="logo-block w-nav-brand w--current"><img src="/img/smile-face.svg"
 					 alt=""
 					 class="logo"></a>
-			<div class="menu-button w-nav-button">
-				<div class="w-icon-nav-menu"></div>
+			<div class="menu-button w-nav-button" id="js-menu-open" onclick="document.getElementById('js-menu').classList.remove('class', 'hidden');document.getElementById('js-menu-open').classList.add('class', 'hidden');;document.getElementById('js-menu-close').classList.remove('class', 'hidden');">
+				<svg style="height: 32px;width: 100%;"
+					 xmlns="http://www.w3.org/2000/svg"
+					 width="24"
+					 height="24"
+					 viewBox="0 0 24 24"
+					 fill="none"
+					 stroke="#fff"
+					 stroke-width="2"
+					 stroke-linecap="round"
+					 stroke-linejoin="round"
+					 class="feather feather-menu">
+					<line x1="3"
+						  y1="12"
+						  x2="21"
+						  y2="12" />
+					<line x1="3"
+						  y1="6"
+						  x2="21"
+						  y2="6" />
+					<line x1="3"
+						  y1="18"
+						  x2="21"
+						  y2="18" /></svg>
 			</div>
-			<div class="cta-nav-menu w-hidden-small w-hidden-tiny"><a
-				   href="https://secure.swingvy.com/#/login"
+			<div class="menu-button w-nav-button hidden"  id="js-menu-close" onclick="document.getElementById('js-menu').classList.remove('class', 'hidden');document.getElementById('js-menu-close').classList.add('class', 'hidden');;document.getElementById('js-menu-open').classList.remove('class', 'hidden');">
+				<svg style="height: 32px;width: 100%;"
+					 xmlns="http://www.w3.org/2000/svg"
+					 width="24"
+					 height="24"
+					 viewBox="0 0 24 24"
+					 fill="none"
+					 stroke="#fff"
+					 stroke-width="2"
+					 stroke-linecap="round"
+					 stroke-linejoin="round"
+					 class="feather feather-menu">
+					<line x1="3"
+						  y1="12"
+						  x2="21"
+						  y2="12" />
+					<line x1="3"
+						  y1="6"
+						  x2="21"
+						  y2="6" />
+					<line x1="3"
+						  y1="18"
+						  x2="21"
+						  y2="18" /></svg>
+			</div>
+			<div class="cta-nav-menu w-hidden-small w-hidden-tiny"><a href="https://secure.swingvy.com/#/login"
 				   class="nav-link cta-nav-link w-hidden-small w-hidden-tiny w-nav-link">Sign in</a><a
 				   href="https://secure.swingvy.com/#/register"
 				   class="nav-link cta-nav-link register w-nav-link">Sign up</a></div>
 			<nav role="navigation"
-				 class="nav-menu w-clearfix w-nav-menu">
+				 class="nav-menu w-clearfix w-nav-menu hidden md:block"
+				 id="js-menu">
 				<a href="/"
 				   class="nav-link w-nav-link w--current">Home</a>
 				<a href="/features"
@@ -69,8 +116,7 @@
 				<a href="/support"
 				   target="_blank"
 				   class="nav-link w-nav-link">Support</a>
-				<div class="cta-nav-menu w-hidden-main w-hidden-medium"><a
-					   href="https://secure.swingvy.com/#/login"
+				<div class="cta-nav-menu w-hidden-main w-hidden-medium"><a href="https://secure.swingvy.com/#/login"
 					   class="nav-link cta-nav-link w-nav-link">Sign in</a><a
 					   href="https://secure.swingvy.com/#/register"
 					   class="nav-link cta-nav-link register w-nav-link">Sign up </a></div>
@@ -79,6 +125,25 @@
 		<div class="website-wrapper">
 			<div class="hero-section">
 				<div class="medium-container w-container">
+					<div class="hero-text-block">
+						<h1 class="hero-title subtitle"
+							data-ix="fade-in-on-load-2"
+							style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;">
+							<span class="font-thin text-4xl">Increase Sales </span> <br>Salesbot.</h1>
+						<p class="hero-paragraph"
+						   data-ix="fade-in-on-load-3"
+						   style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam augue nunc, imperdiet ut
+							vestibulum id, pulvinar sed odio. Aenean faucibus erat ante, porttitor dictum augue
+							tincidunt eu. </p><a href="https://secure.swingvy.com/#/register"
+						   class="button w-inline-block"
+						   data-ix="fade-in-on-load-4"
+						   style="transition: transform 0.2s ease 0s, box-shadow 0.2s ease 0s, -webkit-transform 0.2s ease 0s, opacity 500ms ease 0s, transform 500ms ease 0s; opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px);">
+							<div class="button-title">Try it now</div>
+						</a>
+					</div><img src="img/hero-image.svg"
+						 alt=""
+						 class="hero-image">
 				</div>
 			</div>
 			<div class="section brands-section">
