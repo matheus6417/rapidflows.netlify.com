@@ -324,7 +324,7 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 }
 @media (max-width:479px){
 .cta-column-block,.press-block{text-align:center;}
-.logo{width:145px;margin-top:16px;margin-left:5px;}
+.logo{/* width:145px; *//* margin-top:16px; *//* margin-left:5px; */}
 .nav-menu{min-width:75%;}
 .nav-link,.nav-link.cta-nav-link{line-height:25px;}
 .nav-link.cta-nav-link.register{top:-3px;height:auto;line-height:25px;}
@@ -376,7 +376,7 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 .press-column{padding-right:9px;padding-left:9px;}
 .press-block{display:block;height:195px;margin-bottom:30px;}
 .press-logo{display:block;height:35px;}
-.menu-button{width:50px;padding-top:12px;font-size:35px;}
+.menu-button{width:50px;/* padding-top:12px; */font-size:35px;}
 .footer-paragraph{display:block;max-width:330px;}
 .request-demo-text{max-width:230px;font-size:13px;line-height:20px;}
 }
