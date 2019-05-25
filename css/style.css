@@ -17,7 +17,6 @@
 
 * {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -215,7 +214,9 @@ label {
 
 .w-dropdown-toggle {
     -webkit-user-select: none;
-    user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
     cursor: pointer;
     padding-right: 40px;
 }
@@ -347,7 +348,10 @@ label {
     display: none;
     cursor: pointer;
     tap-highlight-color: transparent;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 @media screen and (max-width:991px) {
@@ -430,6 +434,7 @@ a {
     background-color: transparent;
 }
 .menu-button {
+    -webkit-transition:  all 200ms ease;
     transition:  all 200ms ease;
 }
 .nav-link {
@@ -506,11 +511,9 @@ a {
     height: 820px;
     padding-top: 245px;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     border-style: none none solid;
@@ -525,7 +528,6 @@ a {
 
 .container {
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
 }
@@ -605,7 +607,10 @@ a {
     background-color: rgba(255, 255, 255, 0.9);
     -webkit-transition: box-shadow .2s ease, -webkit-transform .2s ease;
     transition: box-shadow .2s ease, -webkit-transform .2s ease;
+    -webkit-transition: -webkit-transform .2s ease, -webkit-box-shadow .2s ease;
+    transition: -webkit-transform .2s ease, -webkit-box-shadow .2s ease;
     transition: transform .2s ease, box-shadow .2s ease;
+    transition: transform .2s ease, box-shadow .2s ease, -webkit-transform .2s ease, -webkit-box-shadow .2s ease;
     transition: transform .2s ease, box-shadow .2s ease, -webkit-transform .2s ease;
     color: #FF5258;
     text-decoration: none;
@@ -618,9 +623,9 @@ a {
 }
 
 .button:hover {
-    box-shadow: 14px 14px 20px -10px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 14px 14px 20px -10px rgba(0, 0, 0, .2);
+            box-shadow: 14px 14px 20px -10px rgba(0, 0, 0, .2);
     -webkit-transform: translate(0, -2px);
-    -ms-transform: translate(0, -2px);
     transform: translate(0, -2px);
     color: #FF5258;
 }
@@ -661,7 +666,6 @@ a {
     padding-right: 50px;
     padding-left: 50px;
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
 }
@@ -954,22 +958,18 @@ a {
 
 .cta-column-block._2 {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 40%;
     padding: 10px 50px 5px 70px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
     border-left: 2px dashed #5d95f6;
@@ -1067,11 +1067,9 @@ a {
     height: 100px;
     padding: 0 30px;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     border-style: solid;
@@ -1093,7 +1091,8 @@ a {
     opacity: 1;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
 }
 
 .company-logo.medium {
@@ -1141,7 +1140,6 @@ a {
 }
 
 .press-block {
-    -webkit-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
 }
@@ -1161,13 +1159,13 @@ a {
     display: block;
     height: auto;
     -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
@@ -1329,7 +1327,6 @@ a {
 html.w-mod-js [data-ix=fade-in-on-load-2] {
     opacity: 0;
     -webkit-transform: translate(0, -10px);
-    -ms-transform: translate(0, -10px);
     transform: translate(0, -10px);
 }
 
@@ -1338,7 +1335,6 @@ html.w-mod-js [data-ix=fade-in-on-load-4],
 html.w-mod-js [data-ix=fade-in-on-load-5] {
     opacity: 0;
     -webkit-transform: translate(10px, 0);
-    -ms-transform: translate(10px, 0);
     transform: translate(10px, 0);
 }
 
@@ -1360,7 +1356,8 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         margin-left: 50px;
         padding-top: 32px;
         background-color: #fff;
-        box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
+        -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
+                box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
     }
 
     .nav-link {
@@ -1368,6 +1365,7 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         padding: 10px 20px 10px 30px;
         font-size: 16px;
         line-height: 32px;
+        color: #000;
     }
 
     .nav-link.w--current {
@@ -1618,9 +1616,15 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         color: #216ef4;
         font-size: 45px;
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding: 0;
     }
     .menu-button:hover{
@@ -1693,7 +1697,7 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
 
     .cta-nav-menu {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 0;
         margin-right: 0;
         /* padding-top: 30px; */
         float: none;

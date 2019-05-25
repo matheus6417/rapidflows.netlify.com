@@ -1,0 +1,59 @@
+﻿@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    @font-face {
+        font-family: 'Radikal';
+        src: url('../fonts/Radikal-UltraThin.eot') format('eot'), url('../fonts/Radikal-Thin.eot') format('eot');
+        font-weight: 100;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Radikal';
+        src: url('../fonts/Radikal-Black.eot') format('eot');
+        font-weight: 900;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Radikal';
+        src: url('../fonts/Radikal-Regular.eot') format('eot');
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Radikal';
+        src: url('../fonts/Radikal-Light.eot') format('eot');
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Radikal';
+        src: url('../fonts/Radikal-Bold.eot') format('eot');
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Radikal';
+        src: url('../fonts/Radikal-Medium.eot') format('eot');
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Radikal';
+        src: url('../fonts/Radikal-RegularItalic.eot') format('eot');
+        font-weight: 400;
+        font-style: italic;
+    }  
+.hero-section {
+    background-image: url('/img/background.png')!important;
+}
+
+.navbar {
+    background-image: url('/img/background.png')!important;
+}
+
+}
