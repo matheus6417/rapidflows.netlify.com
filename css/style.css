@@ -295,13 +295,23 @@ label {
 .w-nav-menu {
     position: relative;
 }
+.navbar{
+    transition: all 130ms ease-in
 
+}
+
+.is-sticky .menu-button > svg {
+    filter: invert(1);
+}
 .navbar,
 .w-nav-link {
     margin-right: auto;
     margin-left: auto;
 }
-
+.navbar.is-sticky{
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: solid 1px rgba(10, 14, 16, 0.07);
+  }
 .w-nav:after {
     clear: both;
 }
@@ -399,16 +409,16 @@ a {
     top: 0;
     right: 0;
     display: block;
-    height: 87px;
-    padding-top: 22px;
+    height: 62px;
+    padding-top: 8px;
     padding-right: 55px;
     padding-left: 55px;
     border-bottom: none;
     background-color: transparent;
-    background-image: url('/img/background.svg');
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url('/img/background.svg'); */
+    /* background-position: top left; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
 }
 
 .container,
@@ -447,7 +457,7 @@ a {
     font-size: 16px;
 }
 
-.nav-link:hover {
+.navbar .nav-link:hover {
     border-bottom-color: #4F73B8;
     color: #4F73B8;
 }
@@ -477,7 +487,17 @@ a {
     color: #ffffff;
     line-height: 23px;
 }
+.is-sticky .nav-link, .navbar.is-sticky .cta-nav-link {
+    color: rgba(0, 0, 0, 0.8);
+}
 
+.is-sticky .nav-link.w--current {
+    border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+.navbar.is-sticky .cta-nav-link {
+
+    border-color: rgba(0, 0, 0, 0.8);
+}
 .nav-link.cta-nav-link.register:hover {
     background-color: #4F73B8;
     color: #fff;
@@ -1341,14 +1361,14 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
 
 @media (max-width:991px) {
     .navbar {
-        height: 80px;
+        height: 54px;
         padding-top: 0;
         padding-right: 0;
         padding-left: 25px;
     }
 
     .logo {
-        margin-top: 19px;
+        margin-top: 4px;
     }
 
     .nav-menu {
@@ -1387,7 +1407,7 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
     }
 
     .cta-nav-menu {
-        margin-top: 22px;
+        margin-top: 10px;
         margin-right: 40px;
         margin-left: 0;
         padding-left: 0;
@@ -1611,7 +1631,7 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
 
     .menu-button {
         width: 80px;
-        height: 80px;
+        height: 54px;
         padding-right: 0;
         padding-bottom: 0;
         padding-left: 0;
@@ -1623,11 +1643,11 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         padding: 0;
     }
     .menu-button:hover{
@@ -1658,8 +1678,9 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
     }
 
     .logo {
-        width: 36px;
-        margin-top: 4px;
+        width: auto;
+        margin-top: 8px;
+        height: 40px;
     }
 
     .nav-link {

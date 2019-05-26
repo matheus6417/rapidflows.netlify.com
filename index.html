@@ -32,9 +32,15 @@
 			  type="text/css">
 		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
 		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js" type="text/javascript"></script><![endif]-->
-		
-		
-		<link rel="stylesheet" type="text/css" href="css/all-ie-only.css" />
+		<script src="js/jquery.min.js"
+				type="text/javascript">
+		</script>
+		<script src="js/main.js"
+				type="text/javascript">
+		</script>
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="css/all-ie-only.css" />
 		<script type="text/javascript">
 			! function (o, c) {
 				var n = c.documentElement,
@@ -43,9 +49,20 @@
 					.className += t + "touch")
 			}(window, document);
 		</script>
+		<style>
+			body {
+				opacity: 1;
+				transition: 1s opacity;
+			}
+
+			body.fade-out {
+				opacity: 0;
+				transition: none;
+			}
+		</style>
 	</head>
 
-	<body>
+	<body class="fade-out">
 		<div data-collapse="medium"
 			 data-animation="over-right"
 			 data-duration="400"
@@ -108,9 +125,9 @@
 						  x2="21"
 						  y2="18" /></svg>
 			</div>
-			<div class="cta-nav-menu w-hidden-small w-hidden-tiny"><a href="https://secure.swingvy.com/#/login"
+			<div class="cta-nav-menu w-hidden-small w-hidden-tiny"><a href="#"
 				   class="nav-link cta-nav-link w-hidden-small w-hidden-tiny w-nav-link">Sign in</a><a
-				   href="https://secure.swingvy.com/#/register"
+				   href="#"
 				   class="nav-link cta-nav-link register w-nav-link">Sign up</a></div>
 			<nav role="navigation"
 				 class="nav-menu w-clearfix w-nav-menu hidden lg:block"
@@ -124,9 +141,9 @@
 				<a href="/support"
 				   target="_blank"
 				   class="nav-link w-nav-link">Support</a>
-				<div class="cta-nav-menu w-hidden-main w-hidden-medium"><a href="https://secure.swingvy.com/#/login"
+				<div class="cta-nav-menu w-hidden-main w-hidden-medium"><a href="#"
 					   class="nav-link cta-nav-link w-nav-link">Sign in</a><a
-					   href="https://secure.swingvy.com/#/register"
+					   href="#"
 					   class="nav-link cta-nav-link register w-nav-link">Sign up </a></div>
 			</nav>
 		</div>
@@ -143,7 +160,7 @@
 						   style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam augue nunc, imperdiet ut
 							vestibulum id, pulvinar sed odio. Aenean faucibus erat ante, porttitor dictum augue
-							tincidunt eu. </p><a href="https://secure.swingvy.com/#/register"
+							tincidunt eu. </p><a href="#"
 						   class="button w-inline-block"
 						   data-ix="fade-in-on-load-4"
 						   style="transition: transform 0.2s ease 0s, box-shadow 0.2s ease 0s, -webkit-transform 0.2s ease 0s, opacity 500ms ease 0s, transform 500ms ease 0s; opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px);">
@@ -184,6 +201,11 @@
 					</div>
 				</div>
 			</div>
+			<script>
+				$(function () {
+					$('body').removeClass('fade-out');
+				});
+			</script>
 	</body>
 
 </html>
