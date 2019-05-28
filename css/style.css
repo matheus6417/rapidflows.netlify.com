@@ -1,9 +1,9 @@
 ﻿.w-icon-nav-menu:before {
-    content: "\e602";
+    content: "\e602"
 }
 
 .w-icon-dropdown-toggle:before {
-    content: "\e603";
+    content: "\e603"
 }
 
 .w-clearfix:after,
@@ -13,89 +13,74 @@
     grid-row-start: 1;
     grid-column-end: 2;
     grid-row-end: 2;
+    display: table
 }
 
 * {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .w-inline-block {
     max-width: 100%;
-    display: inline-block;
+    display: inline-block
 }
 
 .w-clearfix:after,
-.w-clearfix:before {
-    display: table;
-}
-
-.w-clearfix:after {
-    clear: both;
-}
-
 .w-container:after,
 .w-row:after {
-    clear: both;
+    clear: both
 }
 
 h1,
 h2 {
     margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 10px
 }
 
 p {
     margin-top: 0;
-}
-
-h1,
-h2 {
-    font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 20px
 }
 
 h1 {
     font-size: 38px;
-    line-height: 44px;
+    line-height: 44px
 }
 
 h2 {
     font-size: 32px;
-    line-height: 36px;
+    line-height: 36px
 }
 
 button {
     border: 0;
     cursor: pointer;
-    -webkit-appearance: button;
+    -webkit-appearance: button
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .w-container:after,
 .w-container:before,
 .w-row:after,
 .w-row:before {
-    display: table;
-    content: " ";
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-column-end: 2;
-    grid-row-end: 2;
+    display: table
 }
 
 .w-container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 940px;
+    max-width: 940px
 }
 
 .w-container .w-row {
     margin-left: -10px;
-    margin-right: -10px;
+    margin-right: -10px
 }
 
 .w-col {
@@ -104,28 +89,28 @@ label {
     width: 100%;
     min-height: 1px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px
 }
 
 .w-col-3 {
-    width: 25%;
+    width: 25%
 }
 
 .w-hidden-main {
-    display: none !important;
+    display: none !important
 }
 
 @media screen and (max-width:991px) {
     .w-container {
-        max-width: 728px;
+        max-width: 728px
     }
 
     .w-hidden-main {
-        display: inherit !important;
+        display: inherit !important
     }
 
     .w-hidden-medium {
-        display: none !important;
+        display: none !important
     }
 }
 
@@ -133,97 +118,82 @@ label {
 
     .w-hidden-main,
     .w-hidden-medium {
-        display: inherit !important;
+        display: inherit !important
     }
 
     .w-hidden-small {
-        display: none !important;
+        display: none !important
     }
 
     .w-container .w-row,
     .w-row {
         margin-left: 0;
-        margin-right: 0;
+        margin-right: 0
     }
 
     .w-col {
         width: 100%;
         left: auto;
-        right: auto;
+        right: auto
     }
 
     .w-col-small-6 {
-        width: 50%;
+        width: 50%
     }
 }
 
 @media screen and (max-width:479px) {
     .w-container {
-        max-width: none;
+        max-width: none
     }
 
     .w-hidden-main,
     .w-hidden-medium,
     .w-hidden-small {
-        display: inherit !important;
+        display: inherit !important
     }
 
     .w-hidden-tiny {
-        display: none !important;
+        display: none !important
     }
 
     .w-col {
-        width: 100%;
+        width: 100%
     }
 
     .w-col-tiny-6 {
-        width: 50%;
+        width: 50%
     }
 }
 
 .w-dropdown,
 .w-dropdown-toggle {
     display: inline-block;
-}
-
-.w-dropdown-toggle,
-.w-nav-button {
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
-.w-dropdown,
-.w-dropdown-toggle {
     position: relative;
     text-align: left;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .w-dropdown {
-    z-index: 900;
+    z-index: 900
 }
 
 .w-dropdown-toggle {
     vertical-align: top;
     text-decoration: none;
     color: #222;
-    padding: 20px;
     white-space: nowrap;
-}
-
-.w-dropdown-toggle {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     cursor: pointer;
-    padding-right: 40px;
+    padding: 20px 40px 20px 20px
 }
 
 .w-nav-button {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent
 }
 
 .w-icon-dropdown-toggle {
@@ -233,67 +203,70 @@ label {
     bottom: 0;
     margin: auto 20px auto auto;
     width: 1em;
-    height: 1em;
+    height: 1em
 }
 
 .w-dropdown-list {
     position: absolute;
     background: #ddd;
     display: none;
-    min-width: 100%;
+    min-width: 100%
 }
 
 @media screen and (max-width:991px) {
 
     .w-nav[data-collapse=medium] .w-dropdown,
     .w-nav[data-collapse=medium] .w-dropdown-toggle {
-        display: block;
+        display: block
     }
 
     .w-nav[data-collapse=medium] .w-dropdown-list {
-        position: static;
+        position: static
     }
 }
 
 @media screen and (max-width:767px) {
     .w-nav-brand {
-        padding-left: 10px;
+        padding-left: 10px
     }
 }
 
 .color-intro-title {
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 .w-nav-link {
     vertical-align: top;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .button.cta-button {
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 .company-logo {
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%)
 }
 
+.w-container:after,
+.w-container:before,
 .w-nav:after,
-.w-nav:before {
+.w-nav:before,
+.w-row:after,
+.w-row:before {
     content: " ";
     grid-column-start: 1;
     grid-row-start: 1;
     grid-column-end: 2;
-    grid-row-end: 2;
+    grid-row-end: 2
 }
 
 .w-nav,
 .w-nav-brand,
 .w-nav-link,
 .w-nav-menu {
-    position: relative;
+    position: relative
 }
 
 .navbar {
@@ -301,60 +274,57 @@ label {
 }
 
 .is-sticky .menu-button>svg {
-    filter: invert(1);
+    filter: invert(1)
 }
 
 .navbar,
 .w-nav-link {
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto
 }
 
 .navbar.is-sticky {
-    background: rgba(255, 255, 255, 0.8);
-    border-bottom: solid 1px rgba(10, 14, 16, 0.07);
+    background: rgba(255, 255, 255, .8);
+    border-bottom: solid 1px rgba(10, 14, 16, .07)
 }
 
 .w-nav:after {
-    clear: both;
+    clear: both
 }
 
 .w-nav {
     background: #ddd;
-    z-index: 1000;
+    z-index: 1000
 }
 
 .w-nav:after,
 .w-nav:before {
-    display: table;
+    display: table
 }
 
 .w-nav-brand {
     float: left;
     text-decoration: none;
-    color: #333;
+    color: #333
 }
 
 .w-nav-link {
     display: inline-block;
     color: #fff;
     padding: 20px;
-    text-align: left;
+    text-align: left
 }
 
 .w-nav-link.w--current {
-    color: #0082f3;
+    color: #0082f3
 }
 
 .w-nav-menu {
-    float: right;
+    float: right
 }
 
 .w-nav-button {
     position: relative;
-}
-
-.w-nav-button {
     float: right;
     padding: 18px;
     font-size: 24px;
@@ -364,45 +334,36 @@ label {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
-}
-
-@media screen and (max-width:991px) {
-    .w-nav[data-collapse=medium] .w-nav-button {
-    }
+    user-select: none
 }
 
 @media screen and (max-width:767px) {
     .w-nav-brand {
-        padding-left: 10px;
+        padding-left: 10px
     }
 }
 
 a:hover,
 body {
-    color: #07265d;
+    color: #07265d
 }
 
 body {
     background-color: #ecf0f5;
     font-family: Radikal, sans-serif;
     font-size: 16px;
-    line-height: 25px;
-}
-
-p {
-    margin-bottom: 20px;
+    line-height: 25px
 }
 
 .hero-title,
 .section {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
 a {
     color: #52d2bc;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .navbar {
@@ -416,36 +377,36 @@ a {
     padding-right: 55px;
     padding-left: 55px;
     border-bottom: none;
-    background-color: transparent;
+    background-color: transparent
 }
 
 .container,
 .hero-section {
     position: relative;
-    display: block;
+    display: block
 }
 
 .logo-block {
     display: block;
     height: 30px;
-    width: auto;
+    width: auto
 }
 
 .logo {
     width: auto;
     height: 46px;
-    margin-top: 0;
+    margin-top: 0
 }
 
 .nav-menu {
     margin-top: -1px;
     border-radius: 25px;
-    background-color: transparent;
+    background-color: transparent
 }
 
 .menu-button {
     -webkit-transition: all 200ms ease;
-    transition: all 200ms ease;
+    transition: all 200ms ease
 }
 
 .nav-link {
@@ -454,25 +415,25 @@ a {
     border-bottom: 2px solid transparent;
     -webkit-transition: color .2s ease;
     transition: color .2s ease;
-    font-size: 16px;
+    font-size: 16px
 }
 
 .navbar .nav-link:hover {
-    border-bottom-color: #4F73B8;
-    color: #4F73B8;
+    border-bottom-color: #4f73b8;
+    color: #4f73b8
 }
 
 .nav-link.w--current {
-    border-bottom-color: #ffffff;
-    color: #ffffff;
+    border-bottom-color: #fff;
+    color: #fff
 }
 
 .nav-link.cta-nav-link {
-    color: #ffffff;
+    color: #fff
 }
 
 .nav-link.cta-nav-link:hover {
-    color: #4F73B8;
+    color: #4f73b8
 }
 
 .nav-link.cta-nav-link.register {
@@ -480,46 +441,44 @@ a {
     padding-top: 6px;
     padding-right: 15px;
     padding-left: 15px;
-    border: 2px solid #ffffff;
+    border: 2px solid #fff;
     background-color: transparent;
     -webkit-transition: color .2s ease, background-color .2s ease, border .2s ease;
     transition: color .2s ease, background-color .2s ease, border .2s ease;
-    color: #ffffff;
-    line-height: 23px;
+    color: #fff;
+    line-height: 23px
 }
 
 .is-sticky .nav-link,
 .navbar.is-sticky .cta-nav-link {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, .8)
 }
 
 .is-sticky .nav-link.w--current {
-    border-bottom-color: rgba(0, 0, 0, 0.8);
+    border-bottom-color: rgba(0, 0, 0, .8)
 }
 
 .navbar.is-sticky .cta-nav-link {
-
-    border-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, .8)
 }
 
 .nav-link.cta-nav-link.register:hover {
-    background-color: #4F73B8;
-    color: #fff;
+    background-color: #4f73b8;
+    color: #fff
 }
 
-.hero-section,
 .section,
 .website-wrapper {
-    background-color: #fff;
+    background-color: #fff
 }
 
 .nav-link.dropdown {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 0
 }
 
 .nav-link.dropdown:hover {
-    border-bottom-color: rgba(82, 210, 188, 0);
+    border-bottom-color: transparent
 }
 
 .cta-nav-menu {
@@ -527,7 +486,7 @@ a {
     margin-left: 25px;
     padding-left: 0;
     float: right;
-    border-left: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0
 }
 
 .hero-section {
@@ -548,13 +507,13 @@ a {
     background-image: url(/img/background.svg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover
 }
 
 .container {
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1;
+    flex: 1
 }
 
 .hero-image {
@@ -565,29 +524,29 @@ a {
     width: 840px;
     margin-right: 0;
     padding-right: 0;
-    bottom: 40px;
+    bottom: 40px
 }
 
 .hero-text-block {
     position: relative;
     z-index: 10;
-    width: 400px;
+    width: 400px
 }
 
 .website-wrapper {
     display: block;
     overflow: hidden;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto
 }
 
 .section {
     padding-top: 130px;
-    padding-bottom: 130px;
+    padding-bottom: 130px
 }
 
 .section.tint {
-    background-color: #f4f5f8;
+    background-color: #f4f5f8
 }
 
 .section.footer {
@@ -595,19 +554,19 @@ a {
     padding-bottom: 60px;
     color: #fff;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 22px
 }
 
 .section.press-section {
     padding-top: 120px;
-    padding-bottom: 20px;
+    padding-bottom: 20px
 }
 
 .hero-title {
     color: #216ef4;
     font-size: 55px;
     line-height: 61px;
-    font-weight: 500;
+    font-weight: 500
 }
 
 .hero-title.subtitle {
@@ -615,7 +574,7 @@ a {
     margin-bottom: 30px;
     color: #fff;
     font-size: 47px;
-    line-height: 56px;
+    line-height: 56px
 }
 
 .hero-paragraph {
@@ -624,27 +583,23 @@ a {
     font-size: 17px;
     line-height: 25px;
     font-weight: 300;
-    color: #fff;
+    color: #fff
 }
 
 .button {
     padding: 14px 30px 14px 34px;
-    background-color: rgba(255, 255, 255, 0.9);
-    -webkit-transition: box-shadow .2s ease, -webkit-transform .2s ease;
-    transition: box-shadow .2s ease, -webkit-transform .2s ease;
+    background-color: rgba(255, 255, 255, .9);
     -webkit-transition: -webkit-transform .2s ease, -webkit-box-shadow .2s ease;
-    transition: -webkit-transform .2s ease, -webkit-box-shadow .2s ease;
     transition: transform .2s ease, box-shadow .2s ease;
-    transition: transform .2s ease, box-shadow .2s ease, -webkit-transform .2s ease, -webkit-box-shadow .2s ease;
     transition: transform .2s ease, box-shadow .2s ease, -webkit-transform .2s ease;
-    color: #FF5258;
+    color: #ff5258;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 25px
 }
 
 .button.cta-button {
     padding-right: 40px;
-    position: relative;
+    position: relative
 }
 
 .button:hover {
@@ -652,7 +607,7 @@ a {
     box-shadow: 14px 14px 20px -10px rgba(0, 0, 0, .2);
     -webkit-transform: translate(0, -2px);
     transform: translate(0, -2px);
-    color: #FF5258;
+    color: #ff5258
 }
 
 .button.cta-button {
@@ -664,35 +619,20 @@ a {
     background-position: 39px 50%;
     background-size: 15px;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 25px
 }
 
 .button-title {
     font-size: 20px;
-}
-
-.button-title {
     display: inline-block;
     margin-right: 6px;
     line-height: 25px;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .section-title {
     font-size: 36px;
-    line-height: 40px;
-}
-
-.medium-container {
-    position: relative;
-    height: 100%;
-    max-width: 1220px;
-    padding-top: 0;
-    padding-right: 50px;
-    padding-left: 50px;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    line-height: 40px
 }
 
 .bg-object {
@@ -705,42 +645,22 @@ a {
     border-radius: 30% 70% 30% 100%;
     background-color: #ecf3ff;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ecf3ff), to(#fff));
-    background-image: linear-gradient(180deg, #ecf3ff, #fff);
-}
-
-.bg-circle {
-    position: absolute;
-    left: -130px;
-    top: 510px;
-    z-index: 5;
-    width: 120px;
-    height: 120px;
-    border: 20px solid #216ef4;
-    border-radius: 100%;
-    background-color: transparent;
+    background-image: linear-gradient(180deg, #ecf3ff, #fff)
 }
 
 .company-logo-block.right {
-    border-right-width: 0;
-}
-
-.bg-circle.medium {
-    left: -10px;
-    top: 470px;
-    width: 40px;
-    height: 40px;
-    border-width: 10px;
+    border-right-width: 0
 }
 
 .bg-circle.medium.payroll-2 {
     left: auto;
     top: 205px;
-    right: 20px;
+    right: 20px
 }
 
 .bg-circle.medium.cta-2 {
     left: -10px;
-    top: 357px;
+    top: 357px
 }
 
 .bg-circle.medium.modern-1 {
@@ -748,56 +668,48 @@ a {
     top: 275px;
     z-index: 6;
     width: 60px;
-    height: 60px;
+    height: 60px
 }
 
 .bg-circle.medium.company-2 {
     left: auto;
     top: 457px;
-    right: 20px;
-}
-
-.bg-circle.small {
-    left: -25px;
-    top: 405px;
-    width: 15px;
-    height: 15px;
-    border-width: 0;
-    background-color: #216ef4;
+    right: 20px
 }
 
 .bg-circle.small.payroll-3 {
     left: auto;
     top: 140px;
-    right: -55px;
+    right: -55px
 }
 
 .bg-circle.small.company-3 {
     left: auto;
     top: 405px;
-    right: -25px;
+    right: -25px
 }
 
 .bg-circle.payroll-1 {
     left: auto;
     top: 253px;
-    right: -100px;
+    right: -100px
 }
 
 .bg-circle.payroll-1.bottom-left {
     left: 0;
     top: -200px;
     right: auto;
-    bottom: auto;
+    bottom: auto
 }
 
-.bg-circle.cta-1 {
+.bg-circle.cta-1,
+.bg-circle.large {
     left: -241px;
     top: 327px;
     width: 200px;
     height: 200px;
     border-width: 40px;
-    border-color: #f6f8fc;
+    border-color: #f6f8fc
 }
 
 .bg-circle.large {
@@ -807,15 +719,14 @@ a {
     z-index: 4;
     width: 300px;
     height: 300px;
-    border-width: 40px;
-    border-color: #f5f7fa;
+    border-color: #f5f7fa
 }
 
 .bg-circle.large.bottom-left {
     left: -210px;
     top: auto;
     right: auto;
-    bottom: -180px;
+    bottom: -180px
 }
 
 .bg-circle.large-light {
@@ -826,34 +737,36 @@ a {
     height: 600px;
     border-width: 130px;
     border-color: rgba(7, 38, 93, .04);
-    opacity: 1;
+    opacity: 1
 }
 
 .bg-circle.company-1 {
     left: auto;
     top: 510px;
-    right: -125px;
+    right: -125px
 }
 
 .section-title-wrapper {
     position: relative;
     z-index: 10;
     margin-bottom: 90px;
-    text-align: center;
+    text-align: center
 }
 
 .section-title-wrapper.push-down {
-    margin-bottom: 170px;
+    margin-bottom: 170px
 }
 
 .section-title-wrapper.push-up {
-    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 
 .section-title {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
+    max-width: 500px;
+    margin: auto;
 }
 
 .section-subtitle {
@@ -863,13 +776,14 @@ a {
     margin-right: auto;
     margin-left: auto;
     color: #b4b5b8;
-    font-size: 20px;
-    line-height: 31px;
+    font-size: 25px;
+    line-height: 36px;
     font-weight: 300;
+    max-width: 450px;
 }
 
 .section-subtitle.wide {
-    max-width: 570px;
+    max-width: 570px
 }
 
 .benefit-block {
@@ -877,11 +791,11 @@ a {
     z-index: 14;
     width: 96%;
     margin: 0 auto 260px;
-    padding-bottom: 0;
+    padding-bottom: 0
 }
 
 .benefit-block.last {
-    margin-bottom: 80px;
+    margin-bottom: 80px
 }
 
 .benefit-image {
@@ -889,7 +803,7 @@ a {
     top: -70px;
     right: -10px;
     z-index: 2;
-    height: 340px;
+    height: 340px
 }
 
 .benefit-image.payroll {
@@ -897,7 +811,7 @@ a {
     top: -70px;
     right: -20px;
     bottom: auto;
-    height: 330px;
+    height: 330px
 }
 
 .benefit-image.benefits {
@@ -906,7 +820,7 @@ a {
     right: auto;
     bottom: auto;
     z-index: 10;
-    height: 350px;
+    height: 350px
 }
 
 .benefit-image.hr-pocket {
@@ -914,7 +828,7 @@ a {
     top: -130px;
     right: 55px;
     bottom: auto;
-    height: 420px;
+    height: 420px
 }
 
 .benefit-image.claims {
@@ -922,7 +836,7 @@ a {
     top: -70px;
     right: auto;
     bottom: auto;
-    height: 330px;
+    height: 330px
 }
 
 .benefit-text-block {
@@ -931,34 +845,34 @@ a {
     width: 420px;
     font-size: 20px;
     line-height: 29px;
-    font-weight: 300;
+    font-weight: 300
 }
 
 .benefit-text-block.right {
-    float: right;
+    float: right
 }
 
 .benefit-title {
     margin-bottom: 30px;
     font-size: 36px;
     line-height: 40px;
-    font-weight: 500;
+    font-weight: 500
 }
 
 .color-intro-title {
     margin-bottom: 10px;
     color: #52d2bc;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 400
 }
 
 .benefit-paragraph {
     max-width: 330px;
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
 .benefit-paragraph.medium {
-    max-width: 360px;
+    max-width: 360px
 }
 
 .cta-block {
@@ -970,7 +884,7 @@ a {
     margin-right: auto;
     margin-bottom: -230px;
     margin-left: auto;
-    background-color: #0056ec;
+    background-color: #0056ec
 }
 
 .cta-column-block {
@@ -978,7 +892,7 @@ a {
     height: 425px;
     padding: 80px 60px 70px 70px;
     float: left;
-    color: #fff;
+    color: #fff
 }
 
 .cta-column-block._2 {
@@ -999,14 +913,14 @@ a {
     align-items: flex-start;
     border-left: 2px dashed #5d95f6;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 25px
 }
 
 .cta-block-title {
     max-width: 330px;
     font-size: 56px;
     line-height: 52px;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .cta-block-title.subtitle {
@@ -1014,7 +928,7 @@ a {
     margin-top: 20px;
     font-size: 23px;
     line-height: 33px;
-    font-weight: 300;
+    font-weight: 300
 }
 
 .footer-link {
@@ -1022,28 +936,28 @@ a {
     margin-top: 13px;
     color: #dae4f3;
     font-size: 15px;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .footer-small-link,
 .footer-text {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 10px
 }
 
 .footer-link:hover {
     color: #fff;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .footer-title {
     margin-bottom: 25px;
     font-size: 19px;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .footer-row {
-    width: 650px;
+    width: 650px
 }
 
 .footer-logo-block {
@@ -1054,36 +968,36 @@ a {
     padding-top: 15px;
     float: right;
     font-size: 12px;
-    text-align: center;
+    text-align: center
 }
 
 .footer-logo {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .footer-small-link {
-    color: #bbc6da;
+    color: #bbc6da
 }
 
 .company-logo {
     display: block;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .footer-small-link:hover {
-    color: #fff;
+    color: #fff
 }
 
 .logos-row {
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 10px
 }
 
 .logo-column {
     padding-right: 0;
-    padding-left: 0;
+    padding-left: 0
 }
 
 .company-logo-block {
@@ -1099,11 +1013,11 @@ a {
     align-items: center;
     border-style: solid;
     border-width: 0 1px 1px 0;
-    border-color: #e6e3de;
+    border-color: #e6e3de
 }
 
 .company-logo-block.bottom {
-    border-bottom-width: 0;
+    border-bottom-width: 0
 }
 
 .company-logo {
@@ -1117,67 +1031,62 @@ a {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    transform: translate(0, -50%)
 }
 
 .company-logo.medium {
     width: 65%;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 20px
 }
 
 .footer-column {
     width: 22%;
     padding: 0;
-    float: left;
+    float: left
 }
 
 .footer-column._3 {
     width: 55%;
-    padding-left: 30px;
+    padding-left: 30px
 }
 
 .footer-column._2 {
-    width: 22%;
+    width: 22%
 }
 
 .cta-info-title {
     margin-bottom: 10px;
     clear: none;
-    font-size: 27px;
+    font-size: 27px
 }
 
 .cta-info-block {
     max-width: 320px;
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .cta-small-title {
     margin-bottom: 7px;
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .cta-info-paragraph {
     margin-bottom: 0;
     font-size: 16px;
-    line-height: 25px;
-}
-
-.press-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    line-height: 25px
 }
 
 .press-wrapper {
     position: relative;
     z-index: 20;
-    margin-top: 60px;
+    margin-top: 60px
 }
 
 .press-column {
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 15px
 }
 
 .press-block {
@@ -1193,7 +1102,7 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    text-align: center;
+    text-align: center
 }
 
 .press-logo {
@@ -1201,18 +1110,18 @@ a {
     height: 65px;
     margin-right: auto;
     margin-bottom: 25px;
-    margin-left: auto;
+    margin-left: auto
 }
 
 .press-link {
     color: #98a6be;
     font-size: 15px;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .press-link:hover {
     color: #216ef4;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .footer-paragraph {
@@ -1220,11 +1129,11 @@ a {
     font-size: 15px;
     line-height: 23px;
     font-weight: 300;
-    text-align: left;
+    text-align: left
 }
 
 .press-short-quote {
-    text-align: center;
+    text-align: center
 }
 
 .dropdown-link {
@@ -1233,47 +1142,47 @@ a {
     border-top: 1px solid #e9e9e9;
     color: #000;
     font-size: 13px;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .dropdown-link:hover {
-    color: #216ef4;
+    color: #216ef4
 }
 
 .dropdown-toggle {
-    padding: 7px 0 3px;
+    padding: 7px 0 3px
 }
 
 .press-short-quote {
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 15px
 }
 
 .bottom-footer-block {
     margin-top: 80px;
     padding-top: 20px;
-    border-top: 1px solid hsla(0, 0%, 100%, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
     font-size: 12px;
-    text-align: left;
+    text-align: left
 }
 
 .social-buttons-wrapper {
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .support-link-block {
     display: block;
-    color: #fff;
+    color: #fff
 }
 
 .support-link-block:hover {
-    color: #6ba0fc;
+    color: #6ba0fc
 }
 
 .support-link-title {
     display: inline-block;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 300
 }
 
 .social-button {
@@ -1284,40 +1193,40 @@ a {
     padding-top: 4px;
     border-radius: 2px;
     background-color: #3b5998;
-    text-align: center;
+    text-align: center
 }
 
 .social-button:hover {
-    opacity: .9;
+    opacity: .9
 }
 
 .social-button.twitter {
-    background-color: #55acee;
+    background-color: #55acee
 }
 
 .social-button.youtube {
-    background-color: red;
+    background-color: red
 }
 
 .social-button.linkedin {
-    background-color: #0077b5;
+    background-color: #0077b5
 }
 
 .social-icon {
-    height: 16px;
+    height: 16px
 }
 
 .footer-mail-icon {
     position: relative;
     top: -1px;
     height: 16px;
-    margin-right: 10px;
+    margin-right: 10px
 }
 
 .beta-tag,
 .dropdown-title,
 .request-demo-text {
-    display: inline-block;
+    display: inline-block
 }
 
 .beta-tag {
@@ -1331,7 +1240,7 @@ a {
     color: #fff;
     font-size: 10px;
     line-height: 19px;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 .request-demo-text {
@@ -1342,17 +1251,11 @@ a {
     margin-bottom: 0;
     margin-left: 24px;
     color: #919aab;
-    line-height: 25px;
+    line-height: 25px
 }
 
 .text-span {
-    color: #636c81;
-}
-
-html.w-mod-js [data-ix=fade-in-on-load-2] {
-    opacity: 0;
-    -webkit-transform: translate(0, -10px);
-    transform: translate(0, -10px);
+    color: #636c81
 }
 
 html.w-mod-js [data-ix=fade-in-on-load-3],
@@ -1360,7 +1263,7 @@ html.w-mod-js [data-ix=fade-in-on-load-4],
 html.w-mod-js [data-ix=fade-in-on-load-5] {
     opacity: 0;
     -webkit-transform: translate(10px, 0);
-    transform: translate(10px, 0);
+    transform: translate(10px, 0)
 }
 
 @media (max-width:991px) {
@@ -1368,23 +1271,22 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         height: 54px;
         padding-top: 0;
         padding-right: 0;
-        padding-left: 25px;
+        padding-left: 25px
     }
 
     .logo {
-        margin-top: 4px;
+        margin-top: 4px
     }
 
     .nav-menu {
         min-width: 300px;
         margin-top: 0;
         margin-left: 50px;
-        padding: 0 21px;
-        padding-top: 32px;
+        padding: 32px 21px 0;
         background-color: #fff;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, .9);
         -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
-        box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3)
     }
 
     .nav-link {
@@ -1392,22 +1294,22 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         padding: 10px 20px 10px 30px;
         font-size: 16px;
         line-height: 32px;
-        color: #000;
+        color: #000
     }
 
     .nav-link.w--current {
         border-bottom-color: #000;
         background-color: transparent;
-        color: #000;
+        color: #000
     }
 
     .nav-link.cta-nav-link {
         margin-left: 20px;
-        padding: 0;
+        padding: 0
     }
 
     .nav-link.cta-nav-link.register {
-        top: -3px;
+        top: -3px
     }
 
     .cta-nav-menu {
@@ -1415,227 +1317,224 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         margin-right: 40px;
         margin-left: 0;
         padding-left: 0;
-        border-left-width: 0;
+        border-left-width: 0
     }
 
     .hero-section {
-        height: 720px;
+        height: 720px
     }
 
     .hero-image {
         top: 0;
-        height: 390px;
+        height: 390px
     }
 
     .hero-text-block {
-        width: 470px;
+        width: 470px
     }
 
     .section {
-        padding: 90px 60px;
+        padding: 90px 60px
     }
 
     .section.footer {
         padding-top: 200px;
-        padding-bottom: 70px;
+        padding-bottom: 70px
     }
 
     .section.press-section {
-        padding-bottom: 0;
+        padding-bottom: 0
     }
 
     .hero-title {
         font-size: 47px;
-        line-height: 54px;
+        line-height: 54px
     }
 
     .hero-title.subtitle {
         font-size: 40px;
-        line-height: 52px;
+        line-height: 52px
     }
 
     .hero-paragraph {
-        width: 410px;
+        width: 410px
     }
 
     .button.cta-button {
         left: -50px;
         margin-top: 30px;
-        padding-left: 70px;
+        padding-left: 70px
     }
 
     .medium-container {
         padding-right: 30px;
-        padding-left: 30px;
+        padding-left: 30px
     }
 
     .bg-object {
-        left: -300px;
+        left: -300px
     }
 
     .bg-circle.medium.payroll-2 {
         top: 180px;
-        right: -90px;
+        right: -90px
     }
 
     .bg-circle.medium.cta-2 {
-        top: 327px;
+        top: 327px
     }
 
     .bg-circle.medium.modern-1 {
-        left: -100px;
+        left: -100px
     }
 
     .bg-circle.cta-1 {
-        left: -161px;
+        left: -161px
     }
 
     .bg-circle.large-light {
-        left: -475px;
+        left: -475px
     }
 
     .section-title-wrapper {
-        margin-bottom: 50px;
+        margin-bottom: 50px
     }
 
     .section-title-wrapper.push-down {
-        margin-bottom: 100px;
+        margin-bottom: 100px
     }
 
     .section-title {
         font-size: 44px;
-        line-height: 43px;
+        line-height: 43px
     }
 
     .benefit-block {
         z-index: 3;
-        margin-bottom: 190px;
+        margin-bottom: 190px
     }
 
     .benefit-block.last {
-        margin-bottom: 80px;
+        margin-bottom: 80px
     }
 
     .benefit-image {
         top: -74px;
         right: -90px;
         z-index: 12;
-        height: 290px;
+        height: 290px
     }
 
     .benefit-image.payroll {
         top: -20px;
         right: -80px;
-        height: 250px;
+        height: 250px
     }
 
     .benefit-image.benefits {
         left: -70px;
         top: -50px;
         right: -85px;
-        height: 260px;
+        height: 260px
     }
 
     .benefit-image.hr-pocket {
         top: -70px;
         right: -20px;
-        height: 340px;
+        height: 340px
     }
 
     .benefit-image.claims {
         left: -110px;
         top: -30px;
-        height: 280px;
+        height: 280px
     }
 
     .benefit-text-block {
-        width: 340px;
+        width: 340px
     }
 
     .benefit-text-block.right {
-        width: 310px;
+        width: 310px
     }
 
     .benefit-title {
         margin-bottom: 20px;
-        font-size: 33px;
+        font-size: 33px
     }
 
     .benefit-paragraph {
         max-width: 500px;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 27px
     }
 
     .cta-block {
-        height: 445px;
+        height: 445px
     }
 
     .cta-column-block {
         width: 50%;
         height: 445px;
-        padding: 60px 30px;
+        padding: 60px 30px
     }
 
     .cta-column-block._2 {
         width: 50%;
-        padding-left: 30px;
+        padding-left: 30px
     }
 
     .cta-block-title {
         font-size: 45px;
-        line-height: 47px;
+        line-height: 47px
     }
 
     .cta-block-title.subtitle {
         font-size: 20px;
-        line-height: 29px;
+        line-height: 29px
     }
 
     .company-logo-block {
         padding-right: 20px;
-        padding-left: 20px;
+        padding-left: 20px
     }
 
     .company-logo {
-        width: 75%;
+        width: 75%
     }
 
     .company-logo.medium {
-        width: 69%;
+        width: 69%
     }
 
     .cta-info-title {
         margin-bottom: 0;
         font-size: 26px;
-        line-height: 26px;
+        line-height: 26px
     }
 
     .cta-info-block {
         font-size: 14px;
-        line-height: 20px;
+        line-height: 20px
     }
 
     .cta-small-title {
         margin-bottom: 5px;
         font-size: 17px;
-        line-height: 18px;
+        line-height: 18px
     }
 
     .press-link {
-        font-size: 14px;
+        font-size: 14px
     }
 
     .press-logo {
-        height: 40px;
+        height: 40px
     }
 
     .menu-button {
         width: 80px;
         height: 54px;
-        padding-right: 0;
-        padding-bottom: 0;
-        padding-left: 0;
         color: #216ef4;
         font-size: 45px;
         text-align: center;
@@ -1648,7 +1547,7 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        padding: 0;
+        padding: 0
     }
 
     .menu-button:hover {
@@ -1656,12 +1555,12 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
     }
 
     .dropdown-link {
-        padding-left: 0;
+        padding-left: 0
     }
 
     .press-short-quote {
         font-size: 12px;
-        line-height: 21px;
+        line-height: 21px
     }
 
     .request-demo-text {
@@ -1669,27 +1568,27 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         margin-top: 0;
         margin-left: 0;
         font-size: 16px;
-        line-height: 27px;
+        line-height: 27px
     }
 }
 
 @media (max-width:767px) {
     .navbar {
         height: 60px;
-        padding-left: 5px;
+        padding-left: 5px
     }
 
     .logo {
         width: auto;
         margin-top: 8px;
-        height: 40px;
+        height: 40px
     }
 
     .nav-link {
         padding-top: 7px;
         padding-bottom: 7px;
         line-height: 35px;
-        color: #000;
+        color: #000
     }
 
     .nav-link.cta-nav-link {
@@ -1697,7 +1596,7 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         padding: 7px 10px 7px 30px;
         font-size: 16px;
         line-height: 35px;
-        color: #000;
+        color: #000
     }
 
     .nav-link.cta-nav-link.register {
@@ -1711,14 +1610,14 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         border-width: 0;
         background-color: transparent;
         color: #8792a5;
-        line-height: 35px;
+        line-height: 35px
     }
 
     .nav-link.cta-nav-link.register:hover {
         border-bottom-width: 2px;
         border-bottom-color: #52d2bc;
         background-color: transparent;
-        color: #216ef4;
+        color: #216ef4
     }
 
     .cta-nav-menu {
@@ -1726,13 +1625,13 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         margin-top: 0;
         margin-right: 0;
         float: none;
-        border-top: 1px solid #e0e0e0;
+        border-top: 1px solid #e0e0e0
     }
 
     .hero-section {
         height: auto;
         padding-top: 115px;
-        padding-bottom: 1rem;
+        padding-bottom: 1rem
     }
 
     .hero-image {
@@ -1740,7 +1639,7 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         display: block;
         width: 75%;
         height: auto;
-        margin: 47px 0 0 -8%;
+        margin: 47px 0 0 -8%
     }
 
     .benefit-image,
@@ -1748,68 +1647,68 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
     .benefit-text-block.right,
     .hero-text-block {
         margin-right: auto;
-        margin-left: auto;
+        margin-left: auto
     }
 
     .hero-text-block {
         display: block;
         width: auto;
         max-width: 400px;
-        text-align: center;
+        text-align: center
     }
 
     .section {
-        padding: 50px 25px 80px;
+        padding: 50px 25px 80px
     }
 
     .section.first-section {
-        padding-top: 190px;
+        padding-top: 190px
     }
 
     .section.footer {
         padding-top: 220px;
-        padding-bottom: 40px;
+        padding-bottom: 40px
     }
 
     .section.press-section {
-        padding-top: 80px;
+        padding-top: 80px
     }
 
     .medium-container {
-        padding-top: 20px;
+        padding-top: 20px
     }
 
     .cta-column-block,
     .cta-column-block._2 {
         padding-bottom: 30px;
         padding-top: 30px;
-        width: 100%;
+        width: 100%
     }
 
     .hero-title.subtitle {
-        font-size: 42px;
+        font-size: 42px
     }
 
     .bg-circle.medium.company-2 {
-        right: -90px;
+        right: -90px
     }
 
     .section-title-wrapper.push-down {
         margin-bottom: 80px;
         padding-right: 20px;
-        padding-left: 20px;
+        padding-left: 20px
     }
 
     .section-subtitle.wide {
-        max-width: 420px;
+        max-width: 420px
     }
 
     .benefit-block {
-        margin-bottom: 80px;
+        margin-bottom: 80px
     }
 
     .benefit-block.last {
-        margin-bottom: 0;
+        margin-bottom: 0
     }
 
     .benefit-image {
@@ -1817,45 +1716,45 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         display: block;
         width: 80%;
         height: auto;
-        margin-bottom: 20px;
+        margin-bottom: 20px
     }
 
     .benefit-image.benefits,
     .benefit-image.claims,
     .benefit-image.hr-pocket,
     .benefit-image.payroll {
-        height: auto;
+        height: auto
     }
 
     .benefit-text-block {
         display: block;
         width: 340px;
-        text-align: center;
+        text-align: center
     }
 
     .benefit-text-block.right {
         display: block;
         float: none;
-        text-align: center;
+        text-align: center
     }
 
     .cta-block {
         display: block;
         height: auto;
-        margin-bottom: -210px;
+        margin-bottom: -210px
     }
 
     .cta-column-block {
         height: auto;
-        float: none;
+        float: none
     }
 
     .cta-column-block._2 {
-        border-left-width: 0;
+        border-left-width: 0
     }
 
     .footer-row {
-        width: auto;
+        width: auto
     }
 
     .footer-logo-block {
@@ -1863,86 +1762,85 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         width: 100%;
         padding-top: 0;
         float: none;
-        text-align: center;
+        text-align: center
     }
 
     .footer-logo {
         width: auto;
-        height: 40px;
+        height: 40px
     }
 
     .footer-text {
         display: block;
-        margin-right: 0;
+        margin-right: 0
     }
 
     .company-logo-block {
         padding-right: 0;
-        padding-left: 0;
+        padding-left: 0
     }
 
     .company-logo-block.bottom.mobile-bottom-line {
-        border-bottom-width: 1px;
+        border-bottom-width: 1px
     }
 
     .company-logo-block.mobile-right {
-        border-right-width: 0;
+        border-right-width: 0
     }
 
     .company-logo.medium {
-        width: 59%;
+        width: 59%
     }
 
-    .footer-column {
+    .footer-column,
+    .footer-column._3 {
         width: 50%;
         float: left;
-        text-align: center;
+        text-align: center
     }
 
     .footer-column._3 {
         width: 100%;
         margin-top: 50px;
         margin-bottom: 40px;
-        padding-left: 0;
-        float: left;
-        text-align: center;
+        padding-left: 0
     }
 
     .footer-column._2 {
-        width: 50%;
+        width: 50%
     }
 
     .cta-info-block {
-        max-width: 100%;
+        max-width: 100%
     }
 
     .press-block {
-        height: 200px;
+        height: 200px
     }
 
     .menu-button {
         width: 60px;
-        height: 60px;
+        height: 60px
     }
 
     .footer-paragraph {
-        text-align: center;
+        text-align: center
     }
 
     .press-short-quote {
         font-size: 13px;
-        line-height: 22px;
+        line-height: 22px
     }
 
     .bottom-footer-block {
         margin-top: 40px;
-        text-align: center;
+        text-align: center
     }
 
     .request-demo-text {
         max-width: 400px;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 }
 
@@ -1950,92 +1848,89 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
 
     .cta-column-block,
     .press-block {
-        text-align: center;
-    }
-
-    .logo {
+        text-align: center
     }
 
     .nav-menu {
         min-width: 75%;
-        border-radius: 25px;
+        border-radius: 25px
     }
 
     .nav-link,
     .nav-link.cta-nav-link {
-        line-height: 25px;
+        line-height: 25px
     }
 
     .nav-link.cta-nav-link.register {
         top: -3px;
         height: auto;
-        line-height: 25px;
+        line-height: 25px
     }
 
     .nav-link.dropdown {
         padding-top: 1px;
-        padding-bottom: 4px;
+        padding-bottom: 4px
     }
 
     .cta-nav-menu {
         margin-top: 15px;
         margin-right: 20px;
-        padding-top: 20px;
+        padding-top: 20px
     }
 
     .hero-section {
         padding-top: 76px;
         padding-right: 10px;
-        padding-left: 10px;
+        padding-left: 10px
     }
 
     .button.cta-button,
     .hero-text-block {
         padding-right: 20px;
-        padding-left: 20px;
+        padding-left: 20px
     }
 
     .hero-text-block {
-        max-width: 350px;
+        max-width: 350px
     }
 
     .section.first-section {
-        padding-top: 190px;
+        padding-top: 190px
     }
 
     .section.footer {
         padding-top: 230px;
         font-size: 12px;
-        line-height: 21px;
+        line-height: 21px
     }
 
     .section.press-section {
-        padding-top: 40px;
+        padding-top: 40px
     }
 
     .hero-title {
         font-size: 37px;
-        line-height: 44px;
+        line-height: 44px
     }
 
     .hero-title.subtitle {
         font-size: 28px;
-        line-height: 34px;
+        line-height: 34px
     }
 
     .hero-paragraph {
         width: auto;
         font-size: 19px;
-        line-height: 30px;
+        line-height: 30px
     }
 
     .button.cta-button {
         left: 0;
-        background-image: none;
+        background-image: none
     }
 
     .button-title {
-        font-size: 18px;
+        font-size: 18px
     }
 
     .benefit-title.payroll,
@@ -2045,37 +1940,37 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
     .press-logo,
     .section-title-wrapper.push-down {
         margin-right: auto;
-        margin-left: auto;
+        margin-left: auto
     }
 
     .medium-container {
         padding-top: 20px;
         padding-right: 0;
-        padding-left: 0;
+        padding-left: 0
     }
 
     .bg-object {
         width: 500px;
-        height: 500px;
+        height: 500px
     }
 
     .bg-circle.medium {
-        left: -30px;
+        left: -30px
     }
 
     .bg-circle.medium.payroll-2 {
         top: 150px;
         right: -50px;
-        display: none;
+        display: none
     }
 
     .bg-circle.medium.cta-2 {
-        left: -40px;
+        left: -40px
     }
 
     .bg-circle.payroll-1 {
         right: -138px;
-        display: none;
+        display: none
     }
 
     .section-title-wrapper.push-down {
@@ -2083,168 +1978,172 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         max-width: 290px;
         margin-bottom: 50px;
         padding-right: 0;
-        padding-left: 0;
+        padding-left: 0
     }
 
     .section-title {
         font-size: 39px;
-        line-height: 42px;
+        line-height: 42px
     }
 
     .section-subtitle {
         max-width: 770px;
         margin-top: 20px;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 27px
     }
 
     .benefit-block {
-        margin-bottom: 60px;
+        margin-bottom: 60px
     }
 
     .benefit-text-block {
         width: auto;
-        max-width: 310px;
+        max-width: 310px
     }
 
     .benefit-text-block.right {
         width: auto;
-        max-width: 270px;
+        max-width: 270px
     }
 
     .benefit-title {
         font-size: 29px;
-        line-height: 31px;
+        line-height: 31px
     }
 
     .benefit-title.payroll {
-        max-width: 200px;
+        max-width: 200px
     }
 
     .color-intro-title {
-        font-size: 12px;
+        font-size: 12px
     }
 
     .benefit-paragraph {
         font-size: 16px;
-        line-height: 26px;
+        line-height: 26px
     }
 
     .cta-block {
-        margin-bottom: -230px;
+        margin-bottom: -230px
     }
 
     .cta-column-block._2 {
         padding-right: 30px;
-        border-top: 1px dashed #5490f8;
+        border-top: 1px dashed #5490f8
     }
 
     .cta-block-title {
         display: block;
         max-width: 230px;
         font-size: 37px;
-        line-height: 44px;
+        line-height: 44px
     }
 
     .cta-block-title.subtitle {
         max-width: 280px;
         font-size: 18px;
-        line-height: 26px;
+        line-height: 26px
     }
 
     .footer-logo {
-        height: 30px;
+        height: 30px
     }
 
     .footer-text {
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 
     .logos-row {
         padding-right: 0;
-        padding-left: 0;
+        padding-left: 0
     }
 
     .company-logo-block {
         padding-right: 20px;
-        padding-left: 20px;
+        padding-left: 20px
     }
 
     .company-logo,
     .company-logo.medium {
         padding-right: 25px;
-        padding-left: 25px;
+        padding-left: 25px
     }
 
     .company-logo {
         width: 100%;
-        height: auto;
+        height: auto
     }
 
     .company-logo.medium {
-        width: 80%;
+        width: 80%
     }
 
     .footer-column._3 {
-        display: block;
+        display: block
     }
 
     .footer-column._2 {
-        padding-right: 40px;
+        padding-right: 40px
     }
 
     .cta-info-paragraph {
-        font-size: 15px;
+        font-size: 15px
     }
 
     .press-wrapper {
-        margin-bottom: 0;
+        margin-bottom: 0
     }
 
     .press-column {
         padding-right: 9px;
-        padding-left: 9px;
+        padding-left: 9px
     }
 
     .press-block {
         display: block;
         height: 195px;
-        margin-bottom: 30px;
+        margin-bottom: 30px
     }
 
     .press-logo {
         display: block;
-        height: 35px;
+        height: 35px
     }
 
     .menu-button {
         width: 50px;
-        font-size: 35px;
+        font-size: 35px
     }
 
     .footer-paragraph {
         display: block;
-        max-width: 330px;
+        max-width: 330px
     }
 
     .request-demo-text {
         max-width: 230px;
         font-size: 13px;
-        line-height: 20px;
+        line-height: 20px
     }
 
     .hero-image {
         width: 100%;
         display: block;
-        margin: 25px 0 0px 0;
-        position: static;
+        margin: 25px 0 0;
+        position: static
     }
 }
 
+.hero-logo,
 .hero-logos {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
+}
+
+.hero-logos {
     height: 70px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -2252,16 +2151,262 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
     max-width: 570px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    margin: 0 auto;
-    opacity: 0.7;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    opacity: .7
 }
 
 .hero-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    opacity: 0.8;
+    opacity: .8
 }
 
+.medium-container {
+    position: relative;
+    height: auto;
+    max-width: 1100px;
+    padding-top: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
 
+.bg-circle {
+    position: absolute;
+    left: -130px;
+    top: 510px;
+    z-index: 5;
+    width: 120px;
+    height: 120px;
+    border: 20px solid #ff975a;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+.bg-circle.medium {
+    left: -10px;
+    top: 470px;
+    width: 40px;
+    height: 40px;
+    border-width: 10px
+}
+
+.bg-circle.medium.subpage-top-2 {
+    top: 101px;
+    border-color: #e8ab2d
+}
+
+.bg-circle.small {
+    left: -25px;
+    top: 405px;
+    width: 15px;
+    height: 15px;
+    border-width: 0;
+    background-color: #fba676;
+}
+
+.bg-circle.small.subpage-top-3 {
+    left: 78px;
+    top: 180px;
+    background-color: #fba676;
+}
+
+.bg-circle.subpage-top-1 {
+    left: 3px;
+    top: -180px;
+    width: 250px;
+    height: 250px;
+    border-width: 30px
+}
+
+.subpage-text-block.centered {
+    display: block;
+    margin-right: auto;
+    width: 560px;
+    margin-left: auto;
+    float: none;
+    text-align: center
+}
+
+.subpage-text-block {
+    position: relative;
+    z-index: 10;
+    width: 520px;
+    float: right
+}
+
+.subpage-text-block.centered.security {
+    width: 660px
+}
+
+.subpage-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #216ef4;
+    font-size: 61px;
+    line-height: 54px;
+    font-weight: 500
+}
+
+.subpage-title.subtitle {
+    margin-top: 30px;
+    color: #07265d;
+    font-size: 33px;
+    line-height: 49px
+}
+
+.subpage-title.subtitle.small-subtitle {
+    margin-top: 25px;
+    font-size: 21px;
+    line-height: 35px;
+    font-weight: 400
+}
+
+.subpage-title.medium {
+    font-size: 47px
+}
+
+.highlight-title {
+    color: #52d2bc
+}
+
+.centered-illustration {
+    display: block;
+    width: 830px;
+    z-index: 99;
+    margin: 30px auto -37px;
+    position: relative;
+}
+
+html.w-mod-js [data-ix=fade-in-on-load] {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    transform: translate(0, 10px)
+}
+
+html.w-mod-js [data-ix=fade-in-on-load-2] {
+    opacity: 0;
+    -webkit-transform: translate(0, -10px);
+    -ms-transform: translate(0, -10px);
+    transform: translate(0, -10px)
+}
+
+@media (max-width:991px) {
+    .medium-container {
+        padding-right: 0;
+        padding-left: 0
+    }
+
+    .bg-circle.subpage-top-1 {
+        left: -197px
+    }
+
+    .subpage-text-block {
+        width: 380px
+    }
+
+    .subpage-title {
+        font-size: 50px
+    }
+
+    .subpage-title.subtitle {
+        margin-top: 20px;
+        font-size: 25px;
+        line-height: 37px
+    }
+
+    .subpage-title.subtitle.small-subtitle {
+        width: auto;
+        font-size: 19px;
+        line-height: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .medium-container {
+        padding-top: 20px
+    }
+
+    .bg-circle.medium.subpage-top-2 {
+        left: -30px;
+        top: 71px
+    }
+
+    .bg-circle.small.subpage-top-3 {
+        left: -56px;
+        top: 139px
+    }
+
+    .subpage-text-block {
+        display: block;
+        width: auto;
+        max-width: 410px;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+        text-align: center
+    }
+
+    .subpage-title.subtitle {
+        font-size: 21px;
+        line-height: 33px;
+        font-weight: 400
+    }
+}
+
+@media (max-width:479px) {
+    .medium-container {
+        padding-top: 20px
+    }
+
+    .bg-circle.medium {
+        left: -30px
+    }
+
+    .bg-circle.medium.subpage-top-2 {
+        left: -50px
+    }
+
+    .bg-circle.subpage-top-1 {
+        left: -237px
+    }
+
+    .subpage-text-block {
+        max-width: 320px
+    }
+
+    .subpage-text-block.centered,
+    .subpage-text-block.centered.security {
+        width: auto
+    }
+
+    .subpage-title {
+        font-size: 41px;
+        line-height: 34px
+    }
+
+    .subpage-title.subtitle {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 29px
+    }
+
+    .subpage-title.subtitle.small-subtitle {
+        width: auto;
+        height: auto;
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 28px
+    }
+
+    .subpage-title.medium {
+        font-size: 41px;
+        line-height: 40px
+    }
+
+    .centered-illustration {
+        margin-bottom: -14px
+    }
+}
