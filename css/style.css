@@ -1081,7 +1081,9 @@ a {
 .press-wrapper {
     position: relative;
     z-index: 20;
-    margin-top: 60px
+    /* margin-top: 60px; */
+    max-width: 400px;
+    margin: 60px auto 0;
 }
 
 .press-column {
@@ -1109,20 +1111,17 @@ a {
     display: block;
     height: 65px;
     margin-right: auto;
-    margin-bottom: 25px;
-    margin-left: auto
+    margin-bottom: 20px;
+    margin-left: auto;
 }
 
 .press-link {
     color: #98a6be;
-    font-size: 15px;
-    text-decoration: none
+    font-size: 18px;
+    text-decoration: none;
 }
 
-.press-link:hover {
-    color: #216ef4;
-    text-decoration: underline
-}
+
 
 .footer-paragraph {
     margin-bottom: 0;
@@ -1282,11 +1281,11 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         min-width: 300px;
         margin-top: 0;
         margin-left: 50px;
-        padding: 32px 21px 0;
+        padding: 13px 21px;
         background-color: #fff;
         background-color: rgba(255, 255, 255, .9);
         -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
-        box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3)
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
     }
 
     .nav-link {
@@ -1529,7 +1528,7 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
     }
 
     .press-logo {
-        height: 40px
+        height: 80px;
     }
 
     .menu-button {
@@ -1982,8 +1981,8 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
     }
 
     .section-title {
-        font-size: 39px;
-        line-height: 42px
+        font-size: 28px;
+        line-height: 42px;
     }
 
     .section-subtitle {
@@ -2104,12 +2103,12 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
     .press-block {
         display: block;
         height: 195px;
-        margin-bottom: 30px
+        margin-bottom: 0px
     }
 
     .press-logo {
         display: block;
-        height: 35px
+        height: 80px
     }
 
     .menu-button {
@@ -2401,6 +2400,8 @@ html.w-mod-js [data-ix=fade-in-on-load-2] {
         line-height: 28px
     }
 
+
+
     .subpage-title.medium {
         font-size: 41px;
         line-height: 40px
@@ -2408,5 +2409,40 @@ html.w-mod-js [data-ix=fade-in-on-load-2] {
 
     .centered-illustration {
         margin-bottom: -14px
+    }
+}
+
+/*! CSS Used from: https://global-uploads.webflow.com/5aabfbb0b2d9ac916e4c45c8/css/swingvy-new.webflow.8a645c2cb.min.css */
+
+.w-col-4 {
+    width: 33.33333333%;
+}
+
+@media screen and (max-width:767px) {
+
+    .w-container .w-row,
+    .w-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .w-col {
+        width: 100%;
+        left: auto;
+        right: auto;
+    }
+
+    .w-col-small-6 {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .w-col {
+        width: 100%;
+    }
+
+    .w-col-tiny-6 {
+        width: 100%;
     }
 }
