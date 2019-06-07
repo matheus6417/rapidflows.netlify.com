@@ -20,7 +20,9 @@
 
     $(document).ready(function () {
         navbar.init();
-     
+        (function () {
+            document.getElementsByTagName('body')[0].classList.remove("fade-out");
+        }());
 
     });
 
