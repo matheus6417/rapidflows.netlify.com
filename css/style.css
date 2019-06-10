@@ -766,7 +766,7 @@ a {
 }
 
 .section-title-wrapper.push-down {
-    margin-bottom: 170px
+    margin-bottom: 170px;
 }
 
 .section-title-wrapper.push-up {
@@ -3393,7 +3393,7 @@ label {
 
 a:hover,
 body {
-    color: #07265d
+    color: #07265d;
 }
 
 body {
@@ -3813,7 +3813,7 @@ a {
 }
 
 .section-title-wrapper.push-down {
-    margin-bottom: 170px
+    margin-bottom: 170px;
 }
 
 .section-title-wrapper.push-up {
