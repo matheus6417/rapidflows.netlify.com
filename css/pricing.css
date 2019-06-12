@@ -262,7 +262,7 @@ html.w-mod-js [data-ix=fade-in-on-load-2]{opacity:0;-webkit-transform:translate(
     min-height: 237px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     border-bottom: 1px solid rgba(0,0,0,.1);
     padding: 20px;
 }
@@ -291,7 +291,13 @@ html.w-mod-js [data-ix=fade-in-on-load-2]{opacity:0;-webkit-transform:translate(
     flex-shrink: 1;
 }
 .pricing-image {
-    max-width: 275px;
+    max-width: 150px;
     margin:auto!important;
     margin-bottom: 20px;
+    height: auto;
+}
+.pricing-step-image {
+    height: auto;
+    width: 150px;
+    margin: auto;
 }
