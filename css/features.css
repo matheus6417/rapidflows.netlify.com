@@ -1277,7 +1277,7 @@ html.w-mod-js [data-ix=fade-in-on-load-2] {
 }
 
 .features-title--wrapper {
-    min-height: 380px;
+  height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1466,5 +1466,5 @@ html.w-mod-js [data-ix=fade-in-on-load-2] {
     }
 }
 .feature-image {
-    height: 250px;
+    max-height: 250px;
 }
