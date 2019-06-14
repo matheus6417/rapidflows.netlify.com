@@ -43,61 +43,7 @@
 
 
 
-			/* Thumbs */
-			.tabs-thumbs {
-				margin: 0;
-				padding-left: 0;
-				border-bottom: 1px solid #e5e5e5;
-			}
-
-			.tabs-thumb {
-				display: inline-block;
-				line-height: 3;
-				position: relative;
-			}
-
-			.tabs-thumb a {
-				display: block;
-				padding: 0 1.5rem;
-				color: #9d9d9d;
-				text-decoration: none;
-				cursor: pointer;
-			}
-
-			.tabs-thumb a:hover {
-				color: #fe5b2d;
-			}
-
-			/* Panels */
-			.tabs-panels {
-				margin: 0;
-				padding: 1rem 0;
-				list-style: none;
-			}
-
-			.tabs-panel {
-				display: none;
-			}
-
-			/* Active */
-			.tabs-thumb.is-active a {
-				color: #fe5b2d;
-			}
-
-			.tabs-thumb.is-active a:hover {
-				cursor: default;
-				color: #fe5b2d;
-			}
-
-			.tabs-thumb.is-active a::after {
-				content: '';
-				position: absolute;
-				bottom: -1px;
-				left: 0;
-				height: 2px;
-				width: 100%;
-				background: #fe5b2d;
-			}
+	
 
 		</style>
 	</head>
@@ -129,6 +75,14 @@
 					in</a><a href="#" class="nav-link cta-nav-link register w-nav-link">Sign up</a>
 				<a href="index.html" class="products-menu" class=""><img src="/img/wannatalklogo-light.svg" alt=""
 						class="logo"></a>
+						<div class="products-menu--wrapper">
+								<a href="index.html" class="products-menu" class=""><img src="/img/wannatalklogo-light.svg" alt=""
+									class="logo" style="filter:invert(0)!Important"></a>
+								<a href="#" class="products-menu--link"><img src="/img/smile-face.svg" alt=""
+										class="products-menu--logo">TeamJello</a>
+								<a href="#" class="products-menu--link"><img src="/img/smile-face.svg" alt=""
+										class="products-menu--logo">Gloo</a>
+							</div>
 			</div>
 			<nav role="navigation" class="nav-menu w-clearfix w-nav-menu hidden lg:block" id="js-menu">
 				<a href="/" class="nav-link w-nav-link ">Home</a>
@@ -225,13 +179,13 @@
 							</div>
 						</li>
 						<li class="tabs-panel 2">
-					2
+							2
 						</li>
 						<li class="tabs-panel 3">
-						3
+							3
 						</li>
 						<li class="tabs-panel 4">
-						4
+							4
 						</li>
 					</ul>
 					<div class="section-title-wrapper push-down">

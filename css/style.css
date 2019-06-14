@@ -1618,7 +1618,8 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         border-width: 0;
         background-color: transparent;
         color: #8792a5;
-        line-height: 35px
+        line-height: 35px;
+        
     }
 
     .nav-link.cta-nav-link.register:hover {
@@ -4324,7 +4325,7 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
     transform: translate(10px, 0)
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .navbar {
         height: 54px;
         padding-top: 0;
@@ -4610,7 +4611,8 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        padding: 0
+        padding: 0;
+        margin-right: 82px;
     }
 
     .menu-button:hover {
@@ -4673,7 +4675,9 @@ html.w-mod-js [data-ix=fade-in-on-load-5] {
         border-width: 0;
         background-color: transparent;
         color: #8792a5;
-        line-height: 35px
+        line-height: 35px;
+        border-radius: 0;
+        border-radius: 0;
     }
 
     .nav-link.cta-nav-link.register:hover {
@@ -6201,3 +6205,109 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff965a', end
     width: 75px;
     padding: 6px 14px 0 0;
 }
+.navbar:not(.is-sticky) .products-menu .logo {
+    filter: invert(1);
+}
+
+.products-menu .logo {
+    opacity: 0.78;
+    z-index: 999;
+}
+.pricing-page .navbar .products-menu .logo {
+    
+    filter: invert(0);
+}
+		/* Thumbs */
+        .tabs-thumbs {
+            margin: 0;
+            padding-left: 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .tabs-thumb {
+            display: inline-block;
+            line-height: 3;
+            position: relative;
+        }
+
+        .tabs-thumb a {
+            display: block;
+            padding: 0 1.5rem;
+            color: #9d9d9d;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .tabs-thumb a:hover {
+            color: #fe5b2d;
+        }
+
+        /* Panels */
+        .tabs-panels {
+            margin: 0;
+            padding: 1rem 0;
+            list-style: none;
+        }
+
+        .tabs-panel {
+            display: none;
+        }
+
+        /* Active */
+        .tabs-thumb.is-active a {
+            color: #fe5b2d;
+        }
+
+        .tabs-thumb.is-active a:hover {
+            cursor: default;
+            color: #fe5b2d;
+        }
+
+        .tabs-thumb.is-active a::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background: #fe5b2d;
+        }
+
+    
+        .products-menu--wrapper {
+            display: none;
+            position: absolute;
+            top:5px;
+            min-width: 250px;
+            right:10px;
+            padding: 50px 30px 34px 34px;
+            background-color: rgba(255, 255, 255, .98);
+            -webkit-transition: -webkit-transform .2s ease, -webkit-box-shadow .2s ease;
+            transition: -webkit-transform .2s ease, -webkit-box-shadow .2s ease;
+            transition: transform .2s ease, box-shadow .2s ease;
+            transition: transform .2s ease, box-shadow .2s ease, -webkit-transform .2s ease, -webkit-box-shadow .2s ease;
+            transition: transform .2s ease, box-shadow .2s ease, -webkit-transform .2s ease;
+            color: #ff5258;
+            text-decoration: none;
+            border-radius: 15px;
+            -webkit-box-shadow: 14px 14px 20px -10px rgba(0, 0, 0, .2);
+            box-shadow: 14px 14px 20px -10px rgba(0, 0, 0, .2);
+            -webkit-transform: translate(0, -2px);
+            transform: translate(0, -2px);
+            color: #ff5258;
+        }
+        .products-menu--link {
+            display: block;
+            font-size: 20px;
+            height: 38px;
+            font-weight: bold;
+        }
+        .products-menu:hover ~ .products-menu--wrapper,.products-menu--wrapper:hover{
+            display: block;
+            transition: all .2s ease
+        }.products-menu--logo {
+            position: relative;
+            height: 32px;
+            display: inline-block;
+            margin-right: 10px;
+        }
