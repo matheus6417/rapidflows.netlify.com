@@ -41,6 +41,64 @@
 				transition: none;
 			}
 
+
+
+			/* Thumbs */
+			.tabs-thumbs {
+				margin: 0;
+				padding-left: 0;
+				border-bottom: 1px solid #e5e5e5;
+			}
+
+			.tabs-thumb {
+				display: inline-block;
+				line-height: 3;
+				position: relative;
+			}
+
+			.tabs-thumb a {
+				display: block;
+				padding: 0 1.5rem;
+				color: #9d9d9d;
+				text-decoration: none;
+				cursor: pointer;
+			}
+
+			.tabs-thumb a:hover {
+				color: #fe5b2d;
+			}
+
+			/* Panels */
+			.tabs-panels {
+				margin: 0;
+				padding: 1rem 0;
+				list-style: none;
+			}
+
+			.tabs-panel {
+				display: none;
+			}
+
+			/* Active */
+			.tabs-thumb.is-active a {
+				color: #fe5b2d;
+			}
+
+			.tabs-thumb.is-active a:hover {
+				cursor: default;
+				color: #fe5b2d;
+			}
+
+			.tabs-thumb.is-active a::after {
+				content: '';
+				position: absolute;
+				bottom: -1px;
+				left: 0;
+				height: 2px;
+				width: 100%;
+				background: #fe5b2d;
+			}
+
 		</style>
 	</head>
 
@@ -76,21 +134,21 @@
 				<a href="/" class="nav-link w-nav-link ">Home</a>
 				<a href="features.html" class="nav-link w-nav-link w--current">Features</a>
 				<a href="pricing.html" class="nav-link w-nav-link">Pricing</a>
-				<a href="support" target="_blank" class="nav-link w-nav-link">Support</a>
+				<a href="#" target="_blank" class="nav-link w-nav-link">Support</a>
 				<div class="cta-nav-menu w-hidden-main w-hidden-medium"><a href="#"
 						class="nav-link cta-nav-link w-nav-link">Sign in</a><a href="#"
 						class="nav-link cta-nav-link register w-nav-link">Sign up </a></div>
 			</nav>
 		</div>
-		<div class="website-wrapper">
+		<div class="website-wrapper tabs">
 			<div class="section features" style="padding-bottom:0">
 				<div class="section-title-wrapper">
 					<h2 class="section-title">Features</h2>
 				</div>
 				<div style="max-width: 1200px;margin:auto">
-					<div data-w-id="eed514e6-c9c9-fc88-4646-4ebbf45e7289" class="new-features-wrapper">
-						<div class="features-plans-row w-clearfix">
-							<div class="new-features-column">
+					<div class="new-features-wrapper ">
+						<div class="features-plans-row w-clearfix tabs-thumbs">
+							<div class="new-features-column tabs-thumb">
 								<div class="features-column-content-block title-block">
 									<div class=" features-title--wrapper">
 										<img src="img/channels1.svg" alt="" class="feature-image" title="" style="">
@@ -100,7 +158,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="new-features-column">
+							<div class="new-features-column tabs-thumb">
 								<div class="features-column-content-block title-block">
 									<div class=" features-title--wrapper">
 										<img src="img/chatflow2.svg" alt="" class="feature-image" title="" style="    max-height: 212px;
@@ -112,7 +170,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="new-features-column">
+							<div class="new-features-column tabs-thumb">
 								<div class="features-column-content-block title-block">
 									<div class=" features-title--wrapper">
 										<img src="img/customers3.svg" alt="" class="feature-image" title="" style="">
@@ -123,11 +181,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="new-features-column ">
+							<div class="new-features-column tabs-thumb">
 								<div class="features-column-content-block title-block">
 									<div class=" features-title--wrapper">
-										<img src="img/feedback4.svg" alt="" class="feature-image" title=""
-											style="">
+										<img src="img/feedback4.svg" alt="" class="feature-image" title="" style="">
 										<a href="#" class="button features-button outline w-inline-block">
 											<div class="button-title features-button-title">Analyse Conversations<br>
 												and Feedback</div>
@@ -136,35 +193,51 @@
 								</div>
 							</div>
 						</div>
-						<div data-w-id="b3261db2-51b1-6705-e170-6a2e20fbdbe3"
-							class="bg-circle platform-intro-1 features-1"></div>
-						<div data-w-id="0ee68b8d-8356-41ce-8559-0f6725970663" class="bg-circle medium features-2"></div>
-						<div data-w-id="c5bdf81a-ee79-00ec-e39d-1eeb6ada19e4" class="bg-circle small features-3"></div>
+						<div class="bg-circle platform-intro-1 features-1"></div>
+						<div class="bg-circle medium features-2"></div>
+						<div class="bg-circle small features-3"></div>
 					</div>
 				</div>
 			</div>
 			<div class="section features-content">
 				<div class="container w-container" style="    max-width: 940px; ">
+					<ul class="tabs-panels">
+						<li class="tabs-panel 1">
+							<div class="section-text-block"><img src="img/channels1.svg" alt=""
+									class="platform-benefit-image easy-time">
+								<div class="benefit-text-block">
+									<div class="benefit-title">Bots qualify your leads and saves them to your CRM</div>
+									<p class="benefit-paragraph wide">See how your team can structure work to turn all
+										your
+										goals into workable plans.</p>
+								</div>
+							</div>
+							<div class="section-text-block w-clearfix"><img src="img/channels1.svg" alt=""
+									class="platform-benefit-image stay-connected">
+								<div class="benefit-text-block right">
+									<div class="benefit-title stay-connected">Bots qualify your leads and saves them to
+										your CRM
+									</div>
+									<p class="benefit-paragraph wide">See how your team can structure work to turn all
+										your
+										goals into workable plans.</p>
+								</div>
+							</div>
+						</li>
+						<li class="tabs-panel 2">
+					2
+						</li>
+						<li class="tabs-panel 3">
+						3
+						</li>
+						<li class="tabs-panel 4">
+						4
+						</li>
+					</ul>
 					<div class="section-title-wrapper push-down">
 						<div class="bg-circle platform-intro-1"></div>
 						<div class="bg-circle medium platform-2"></div>
 						<div class="bg-circle small platform-3"></div>
-					</div>
-					<div class="section-text-block"><img src="img/channels1.svg" alt="" class="platform-benefit-image easy-time">
-						<div class="benefit-text-block">
-							<div class="benefit-title">Bots qualify your leads and saves them to your CRM</div>
-							<p class="benefit-paragraph wide">See how your team can structure work to turn all your
-								goals into workable plans.</p>
-						</div>
-					</div>
-					<div class="section-text-block w-clearfix"><img src="img/channels1.svg" alt=""
-							class="platform-benefit-image stay-connected">
-						<div class="benefit-text-block right">
-							<div class="benefit-title stay-connected">Bots qualify your leads and saves them to your CRM
-							</div>
-							<p class="benefit-paragraph wide">See how your team can structure work to turn all your
-								goals into workable plans.</p>
-						</div>
 					</div>
 					<div data-w-id="534df37a-87eb-48f5-3854-3ae3128ff758"
 						class="bg-circle large how-it-works w-hidden-small w-hidden-tiny"></div>
@@ -238,10 +311,10 @@
 						</div>
 						<div class="footer-column" style="flex-grow: 1">
 							<div class="footer-title">About</div>
-							<a href="#" class="footer-link">Features</a>
+							<a href="features.html" class="footer-link">Features</a>
 							<a href="#" class="footer-link">Company</a>
 							<a href="#" class="footer-link">Contact Us</a>
-							<a href="/pricing" class="footer-link">Pricing</a>
+							<a href="/pricing.html" class="footer-link">Pricing</a>
 						</div>
 						<div class="footer-column">
 							<div class="footer-title">Follow Gloo.ai</div>

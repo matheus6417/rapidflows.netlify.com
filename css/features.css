@@ -1468,3 +1468,23 @@ html.w-mod-js [data-ix=fade-in-on-load-2] {
 .feature-image {
     max-height: 250px;
 }
+.tabs-thumb:not(.is-active) .button.features-button {
+    background: transparent;
+    color: #FE6458;
+   
+}
+.tabs-thumb .button.features-button{
+    transition: all 200ms ease
+}
+.tabs-thumb .button.features-button:hover{
+ box-shadow:none; 
+}
+.tabs-thumb{
+    padding:20px
+}
+.tabs-thumb:hover {
+background:rgba(0, 0, 0, 0.02);
+border-radius:6px;
+cursor:pointer;
+transition: all 200ms ease
+}
