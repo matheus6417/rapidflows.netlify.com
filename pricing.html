@@ -1,278 +1,578 @@
 ﻿<!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Gloo.ai - Pricing</title>
-		<meta content="" name="description">
-		<meta content="width=device-width, initial-scale=1" name="viewport">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<link href="css/pricing.css" rel="stylesheet" type="text/css">
-		<link href="css/base.css" rel="stylesheet" type="text/css">
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<link href="css/temp.css" rel="stylesheet" type="text/css">
-		<script src="js/jquery.min.js" type="text/javascript">
-		</script>
-		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
-		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js" type="text/javascript"></script><![endif]-->
-		<script src="js/main.js" type="text/javascript">
-		</script>
-		<link rel="stylesheet" type="text/css" href="css/all-ie-only.css" />
-		<script type="text/javascript">
-			! function (o, c) {
-				var n = c.documentElement,
-					t = " w-mod-";
-				n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n
-					.className += t + "touch")
-			}(window, document);
+<head>
+	<meta charset="utf-8">
+	<title>Gloo.ai - Pricing</title>
+	<meta
+		content=""
+		name="description"
+	>
+	<meta
+		content="width=device-width, initial-scale=1"
+		name="viewport"
+	>
+	<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="/apple-touch-icon.png"
+	>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="/favicon-32x32.png"
+	>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="16x16"
+		href="/favicon-16x16.png"
+	>
+	<link
+		rel="manifest"
+		href="/site.webmanifest"
+	>
+	<link
+		href="css/pricing.css"
+		rel="stylesheet"
+		type="text/css"
+	>
+	<link
+		href="css/base.css"
+		rel="stylesheet"
+		type="text/css"
+	>
+	<link
+		href="css/style.css"
+		rel="stylesheet"
+		type="text/css"
+	>
+	<link
+		href="css/temp.css"
+		rel="stylesheet"
+		type="text/css"
+	>
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="css/all-ie-only.css"
+	/>
+	<script type="text/javascript">
+		! function (o, c) {
+			var n = c.documentElement,
+				t = " w-mod-";
+			n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n
+				.className += t + "touch")
+		}(window, document);
 
-		</script>
-		<style>
-			body {
-				opacity: 1;
-				transition: 1s opacity;
-			}
+	</script>
+	<style>
+		body {
+			opacity: 1;
+			transition: 1s opacity;
+		}
 
-			body.fade-out {
-				opacity: 0;
-				transition: none;
-			}
+		body.fade-out {
+			opacity: 0;
+			transition: none;
+		}
+	</style>
+</head>
 
-		</style>
-	</head>
-
-	<body class="fade-out pricing-page">
-		<div data-collapse="medium" data-animation="over-right" data-duration="400" class="navbar w-nav ">
-			<a href="index.html" class="logo-block w-nav-brand w--current"><img src="/img/deepblasterlogo.svg" alt=""
-					class="logo"></a>
-			<div class="menu-button w-nav-button" id="js-menu-open"
-				onclick="document.getElementById('js-menu').classList.remove('hidden');document.getElementById('js-menu-open').classList.add('hidden');document.getElementById('js-menu-close').classList.remove('hidden');">
-				<svg style="height: 32px;width: 100%;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-					viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
-					stroke-linejoin="round" class="feather feather-menu">
-					<line x1="3" y1="12" x2="21" y2="12" />
-					<line x1="3" y1="6" x2="21" y2="6" />
-					<line x1="3" y1="18" x2="21" y2="18" /></svg>
-			</div>
-			<div class="menu-button w-nav-button hidden" id="js-menu-close"
-				onclick="document.getElementById('js-menu').classList.add('hidden');document.getElementById('js-menu-close').classList.add('hidden');document.getElementById('js-menu-open').classList.remove('hidden');">
-				<svg style="height: 32px;width: 100%;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-					viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
-					stroke-linejoin="round" class="feather feather-menu">
-					<line x1="3" y1="12" x2="21" y2="12" />
-					<line x1="3" y1="6" x2="21" y2="6" />
-					<line x1="3" y1="18" x2="21" y2="18" /></svg>
-			</div>
-			<div class="cta-nav-menu w-hidden-small w-hidden-tiny"><a href="#"
-					class="nav-link cta-nav-link w-hidden-small w-hidden-tiny w-nav-link" style="border:none">Sign
-					in</a><a href="#" class="nav-link cta-nav-link register w-nav-link">Sign up</a>
-					<a href="index.html" class="products-menu" class=""><img src="/img/wannatalklogo-light.svg" alt=""
-						class="logo"></a>
-						<div class="products-menu--wrapper">
-								<a href="index.html" class="products-menu" class=""><img src="/img/wannatalklogo-light.svg" alt=""
-									class="logo" style="filter:invert(0)!Important"></a>
-								<a href="#" class="products-menu--link"><img src="/img/smile-face.svg" alt=""
-										class="products-menu--logo">TeamJello</a>
-								<a href="#" class="products-menu--link"><img src="/img/smile-face.svg" alt=""
-										class="products-menu--logo">Gloo</a>
-							</div>
-			</div>
-			<nav role="navigation" class="nav-menu w-clearfix w-nav-menu hidden lg:block" id="js-menu">
-				<a href="/" class="nav-link w-nav-link ">Home</a>
-				<a href="features.html" class="nav-link w-nav-link">Features</a>
-				<a href="pricing.html" class="nav-link w-nav-link w--current">Pricing</a>
-				<a href="#" target="_blank" class="nav-link w-nav-link">Support</a>
-				<div class="cta-nav-menu w-hidden-main w-hidden-medium"><a href="#"
-						class="nav-link cta-nav-link w-nav-link">Sign in</a><a href="#"
-						class="nav-link cta-nav-link register w-nav-link">Sign up </a></div>
-			</nav>
+<body class="fade-out pricing-page">
+	<div
+		data-collapse="medium"
+		data-animation="over-right"
+		data-duration="400"
+		class="navbar w-nav "
+	>
+		<a
+			href="index.html"
+			class="logo-block w-nav-brand w--current"
+		><img
+				src="/img/deepblasterlogo.svg"
+				alt=""
+				class="logo"
+			></a>
+		<div
+			class="menu-button w-nav-button"
+			id="js-menu-open"
+			onclick="document.getElementById('js-menu').classList.remove('hidden');document.getElementById('js-menu-open').classList.add('hidden');document.getElementById('js-menu-close').classList.remove('hidden');"
+		>
+			<svg
+				style="height: 32px;width: 100%;"
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="#fff"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-menu"
+			>
+				<line
+					x1="3"
+					y1="12"
+					x2="21"
+					y2="12"
+				/>
+				<line
+					x1="3"
+					y1="6"
+					x2="21"
+					y2="6"
+				/>
+				<line
+					x1="3"
+					y1="18"
+					x2="21"
+					y2="18"
+				/></svg>
 		</div>
-		<div class="website-wrapper">
-			<div class="subpage-header pricing">
-				<div class="medium-container w-container">
-					<div class="section-title-wrapper">
-						<img src="img/pricing.svg" alt="" class="centered-illustration pricing-image">
-						<h2 class="section-title">Pricing</h2>
-						<div class="section-subtitle">Employ one of our digital workers below at all-time affordable
-							rates</div>
-					</div>
-				</div>
+		<div
+			class="menu-button w-nav-button hidden"
+			id="js-menu-close"
+			onclick="document.getElementById('js-menu').classList.add('hidden');document.getElementById('js-menu-close').classList.add('hidden');document.getElementById('js-menu-open').classList.remove('hidden');"
+		>
+			<svg
+				style="height: 32px;width: 100%;"
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="#fff"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-menu"
+			>
+				<line
+					x1="3"
+					y1="12"
+					x2="21"
+					y2="12"
+				/>
+				<line
+					x1="3"
+					y1="6"
+					x2="21"
+					y2="6"
+				/>
+				<line
+					x1="3"
+					y1="18"
+					x2="21"
+					y2="18"
+				/></svg>
+		</div>
+		<div class="cta-nav-menu w-hidden-small w-hidden-tiny"><a
+				href="#"
+				class="nav-link cta-nav-link w-hidden-small w-hidden-tiny w-nav-link"
+				style="border:none"
+			>Sign
+				in</a><a
+				href="#"
+				class="nav-link cta-nav-link register w-nav-link"
+			>Sign up</a>
+			<a
+				href="index.html"
+				class="products-menu"
+				class=""
+			><img
+					src="/img/wannatalklogo-light.svg"
+					alt=""
+					class="logo"
+				></a>
+			<div class="products-menu--wrapper">
+				<a
+					href="index.html"
+					class="products-menu"
+					class=""
+				><img
+						src="/img/wannatalklogo-light.svg"
+						alt=""
+						class="logo"
+						style="filter:invert(0)!Important"
+					></a>
+				<a
+					href="#"
+					class="products-menu--link"
+				><img
+						src="/img/smile-face.svg"
+						alt=""
+						class="products-menu--logo"
+					>TeamJello</a>
+				<a
+					href="#"
+					class="products-menu--link"
+				><img
+						src="/img/smile-face.svg"
+						alt=""
+						class="products-menu--logo"
+					>Gloo</a>
 			</div>
-			<div class="section pricing">
-				<div class="container w-container">
-					<div data-w-id="eed514e6-c9c9-fc88-4646-4ebbf45e7289" class="new-pricing-wrapper">
-						<div class="pricing-plans-row w-clearfix">
-							<div class="new-pricing-column">
-								<div class="pricing-column-content-block title-block">
-									<div class=" pricing-title--wrapper">
-										<img src="img/free.svg" alt="" class="pricing-step-image" title="" style="">
-										<div class="pricing-column-title">Personal or <br>Small Teams</div>
-									</div>
-									<div class=" pricing-price--wrapper">
-										<div class="pricing-title-text">FREE</div>
-										<div class="pricing-intro-text">No Setup Fee</div>
-									</div>
-									<div class=" pricing-description--wrapper">
-										<div class="pricing-intro-title">Includes:</div>
-										<p class="pricing-intro-text">Wannatalk Messenger<br> Assists unlimited humans
-											<br>
-											5GB Combined Storage <br> No Integrations</p>
-										<div class="pricing-intro-recomendation">Great for Small Teams <br>and Trials
-										</div>
-									</div>
-								</div><a href="#" class="button pricing-button outline w-inline-block">
-									<div class="button-title pricing-button-title">Sign up now</div>
-								</a>
-							</div>
-							<div class="new-pricing-column">
-								<div class="pricing-column-content-block title-block">
-									<div class=" pricing-title--wrapper">
-										<img src="img/premium.svg" alt="" class="pricing-step-image" title="" style="">
-										<div class="pricing-column-title">Premium</div>
-									</div>
-									<div class=" pricing-price--wrapper">
-										<div class="pricing-title-text">$4<span
-												class="pricing-adend">/mo/salesagent</span></div>
-										<div class="pricing-intro-text">No Setup Fee</div>
-									</div>
-									<div class=" pricing-description--wrapper">
-										<div class="pricing-intro-title">Includes:</div>
-										<p class="pricing-intro-text">Wannatalk Messenger<br> Assists 1 sales agent <br>
-											10GB Storage</p>
-										<div class="pricing-intro-recomendation">Great for Small Teams <br>and Trials
-										</div>
-									</div>
-								</div><a href="#" class="button pricing-button outline w-inline-block">
-									<div class="button-title pricing-button-title">Sign up now</div>
-								</a>
-							</div>
-							<div class="new-pricing-column ">
-								<div class="pricing-column-content-block title-block">
-									<div class=" pricing-title--wrapper">
-										<img src="img/rocketlaunch-withbase.svg" alt="" class="pricing-step-image" title=""
-											style="">
-										<div class="pricing-column-title">Enterprise</div>
-									</div>
-									<div class=" pricing-price--wrapper">
-										<div class="pricing-title-text">$249<span class="pricing-adend">/mo/50q*</span>
-										</div>
-										<div class="pricing-intro-text">No Setup Fee</div>
-									</div>
-									<div class=" pricing-description--wrapper">
-										<div class="pricing-intro-title">Includes:</div>
-										<p class="pricing-intro-text">Wannatalk Messenger<br> Assists unlimited
-											customers
-											<br> 10GB Storage <br> Answers up to 50Q (50 Questions) *</p>
-										<div class="pricing-intro-recomendation">Great for Small Teams<br> and Trials
-										</div>
-									</div>
-								</div>
-								<a href="#" class="button pricing-button outline w-inline-block">
-									<div class="button-title pricing-button-title">Sign up now</div>
-								</a>
-							</div>
-						</div>
-						<div data-w-id="b3261db2-51b1-6705-e170-6a2e20fbdbe3"
-							class="bg-circle platform-intro-1 pricing-1"></div>
-						<div data-w-id="0ee68b8d-8356-41ce-8559-0f6725970663" class="bg-circle medium pricing-2"></div>
-						<div data-w-id="c5bdf81a-ee79-00ec-e39d-1eeb6ada19e4" class="bg-circle small pricing-3"></div>
-					</div>
-				</div>
-			</div>
-			<div class="section footer">
-				<div class="bg-circle small footer f1"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f2"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f3"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f4"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f5"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f6"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f7"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f8"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f9"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f10"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f11"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f12"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f13"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f14"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f15"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="bg-circle small footer f16	"
-					style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;">
-				</div>
-				<div class="container w-container">
-					<div class="footer-row w-clearfix">
-						<div class="footer-column">
-							<div class="footer-logo-block">
-								<div class="footer-brand-wrapper">
-									<a href="#" class="brand w-inline-block w--current footer-brand"><img
-											src="img/logo-text.svg" alt="Team Jello" class="logo dark footer-logo">
-										<a href="#" class="footer-logo-wrapper brand w-inline-block w--current "><img
-												src="img/smile-face.svg" alt="Team Jello" class="footer-logo-smile"
-												title="" style=""></a>
-								</div>
-							</div>
-						</div>
-						<div class="footer-column" style="flex-grow: 1">
-							<div class="footer-title">About</div>
-							<a href="features.html" class="footer-link">Features</a>
-							<a href="#" class="footer-link">Company</a>
-							<a href="#" class="footer-link">Contact Us</a>
-							<a href="/pricing.html" class="footer-link">Pricing</a>
-						</div>
-						<div class="footer-column">
-							<div class="footer-title">Follow Gloo.ai</div>
-							<div class="social-bar">
-								<a href="#" target="_blank" class="social-link w-inline-block"><img
-										src="img/facebook-logo.svg" alt="Facebook" class="social-icon"></a>
-								<a href="#" target="_blank" class="social-link w-inline-block"><img
-										src="img/google-plus.svg" alt="Google" class="social-icon"></a>
-								<a href="#" target="_blank" class=" social-link w-inline-block"><img
-										src="img/linkedin-logo.svg" alt="LinkedIn" class="social-icon"></a>
-								<a href="#" target="_blank" class=" social-link w-inline-block"><img
-										src="img/twitter.svg" alt="Twitter" class="social-icon"></a>
-								<a href="#" target="_blank" class=" social-link w-inline-block"><img
-										src="img/youtube.svg" alt="YouTube" class="social-icon"></a>
-								<a href="#" target="_blank" class=" social-link w-inline-block"><img
-										src="img/rss-symbol.svg" alt="RSS" class="social-icon"></a>
-							</div>
-							<div class="footer-text">Ⓒ Copyright 2019.</div>
-						</div>
-					</div>
+		</div>
+		<nav
+			role="navigation"
+			class="nav-menu w-clearfix w-nav-menu hidden lg:block"
+			id="js-menu"
+		>
+			<a
+				href="/"
+				class="nav-link w-nav-link "
+			>Home</a>
+			<a
+				href="features.html"
+				class="nav-link w-nav-link"
+			>Features</a>
+			<a
+				href="pricing.html"
+				class="nav-link w-nav-link w--current"
+			>Pricing</a>
+			<a
+				href="#"
+				target="_blank"
+				class="nav-link w-nav-link"
+			>Support</a>
+			<div class="cta-nav-menu w-hidden-main w-hidden-medium"><a
+					href="#"
+					class="nav-link cta-nav-link w-nav-link"
+				>Sign in</a><a
+					href="#"
+					class="nav-link cta-nav-link register w-nav-link"
+				>Sign up </a></div>
+		</nav>
+	</div>
+	<div class="website-wrapper">
+		<div class="subpage-header pricing">
+			<div class="medium-container w-container">
+				<div class="section-title-wrapper">
+					<img
+						src="img/pricing.svg"
+						alt=""
+						class="centered-illustration pricing-image"
+					>
+					<h2 class="section-title">Pricing</h2>
+					<div class="section-subtitle">Employ one of our digital workers below at all-time affordable
+						rates</div>
 				</div>
 			</div>
 		</div>
-	</body>
+		<div class="section pricing">
+			<div class="container w-container">
+				<div
+					data-w-id="eed514e6-c9c9-fc88-4646-4ebbf45e7289"
+					class="new-pricing-wrapper"
+				>
+					<div class="pricing-plans-row w-clearfix">
+						<div class="new-pricing-column">
+							<div class="pricing-column-content-block title-block">
+								<div class=" pricing-title--wrapper">
+									<img
+										src="img/free.svg"
+										alt=""
+										class="pricing-step-image"
+										title=""
+										style=""
+									>
+									<div class="pricing-column-title">Personal or <br>Small Teams</div>
+								</div>
+								<div class=" pricing-price--wrapper">
+									<div class="pricing-title-text">FREE</div>
+									<div class="pricing-intro-text">No Setup Fee</div>
+								</div>
+								<div class=" pricing-description--wrapper">
+									<div class="pricing-intro-title">Includes:</div>
+									<p class="pricing-intro-text">Wannatalk Messenger<br> Assists unlimited humans
+										<br>
+										5GB Combined Storage <br> No Integrations</p>
+									<div class="pricing-intro-recomendation">Great for Small Teams <br>and Trials
+									</div>
+								</div>
+							</div><a
+								href="#"
+								class="button pricing-button outline w-inline-block"
+							>
+								<div class="button-title pricing-button-title">Sign up now</div>
+							</a>
+						</div>
+						<div class="new-pricing-column">
+							<div class="pricing-column-content-block title-block">
+								<div class=" pricing-title--wrapper">
+									<img
+										src="img/premium.svg"
+										alt=""
+										class="pricing-step-image"
+										title=""
+										style=""
+									>
+									<div class="pricing-column-title">Premium</div>
+								</div>
+								<div class=" pricing-price--wrapper">
+									<div class="pricing-title-text">$4<span class="pricing-adend">/mo/salesagent</span>
+									</div>
+									<div class="pricing-intro-text">No Setup Fee</div>
+								</div>
+								<div class=" pricing-description--wrapper">
+									<div class="pricing-intro-title">Includes:</div>
+									<p class="pricing-intro-text">Wannatalk Messenger<br> Assists 1 sales agent <br>
+										10GB Storage</p>
+									<div class="pricing-intro-recomendation">Great for Small Teams <br>and Trials
+									</div>
+								</div>
+							</div><a
+								href="#"
+								class="button pricing-button outline w-inline-block"
+							>
+								<div class="button-title pricing-button-title">Sign up now</div>
+							</a>
+						</div>
+						<div class="new-pricing-column ">
+							<div class="pricing-column-content-block title-block">
+								<div class=" pricing-title--wrapper">
+									<img
+										src="img/rocketlaunch-withbase.svg"
+										alt=""
+										class="pricing-step-image"
+										title=""
+										style=""
+									>
+									<div class="pricing-column-title">Enterprise</div>
+								</div>
+								<div class=" pricing-price--wrapper">
+									<div class="pricing-title-text">$249<span class="pricing-adend">/mo/50q*</span>
+									</div>
+									<div class="pricing-intro-text">No Setup Fee</div>
+								</div>
+								<div class=" pricing-description--wrapper">
+									<div class="pricing-intro-title">Includes:</div>
+									<p class="pricing-intro-text">Wannatalk Messenger<br> Assists unlimited
+										customers
+										<br> 10GB Storage <br> Answers up to 50Q (50 Questions) *</p>
+									<div class="pricing-intro-recomendation">Great for Small Teams<br> and Trials
+									</div>
+								</div>
+							</div>
+							<a
+								href="#"
+								class="button pricing-button outline w-inline-block"
+							>
+								<div class="button-title pricing-button-title">Sign up now</div>
+							</a>
+						</div>
+					</div>
+					<div
+						data-w-id="b3261db2-51b1-6705-e170-6a2e20fbdbe3"
+						class="bg-circle platform-intro-1 pricing-1"
+					></div>
+					<div
+						data-w-id="0ee68b8d-8356-41ce-8559-0f6725970663"
+						class="bg-circle medium pricing-2"
+					></div>
+					<div
+						data-w-id="c5bdf81a-ee79-00ec-e39d-1eeb6ada19e4"
+						class="bg-circle small pricing-3"
+					></div>
+				</div>
+			</div>
+		</div>
+		<div class="section footer">
+			<div
+				class="bg-circle small footer f1"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f2"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f3"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f4"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f5"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f6"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f7"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f8"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f9"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f10"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f11"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f12"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f13"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f14"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f15"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div
+				class="bg-circle small footer f16	"
+				style="will-change: transform;transform: translate3d(0px, -41px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);transform-style: preserve-3d;"
+			>
+			</div>
+			<div class="container w-container">
+				<div class="footer-row w-clearfix">
+					<div class="footer-column">
+						<div class="footer-logo-block">
+							<div class="footer-brand-wrapper">
+								<a
+									href="#"
+									class="brand w-inline-block w--current footer-brand"
+								><img
+										src="img/logo-text.svg"
+										alt="Team Jello"
+										class="logo dark footer-logo"
+									>
+									<a
+										href="#"
+										class="footer-logo-wrapper brand w-inline-block w--current "
+									><img
+											src="img/smile-face.svg"
+											alt="Team Jello"
+											class="footer-logo-smile"
+											title=""
+											style=""
+										></a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="footer-column"
+						style="flex-grow: 1"
+					>
+						<div class="footer-title">About</div>
+						<a
+							href="features.html"
+							class="footer-link"
+						>Features</a>
+						<a
+							href="#"
+							class="footer-link"
+						>Company</a>
+						<a
+							href="#"
+							class="footer-link"
+						>Contact Us</a>
+						<a
+							href="/pricing.html"
+							class="footer-link"
+						>Pricing</a>
+					</div>
+					<div class="footer-column">
+						<div class="footer-title">Follow Gloo.ai</div>
+						<div class="social-bar">
+							<a
+								href="#"
+								target="_blank"
+								class="social-link w-inline-block"
+							><img
+									src="img/facebook-logo.svg"
+									alt="Facebook"
+									class="social-icon"
+								></a>
+							<a
+								href="#"
+								target="_blank"
+								class="social-link w-inline-block"
+							><img
+									src="img/google-plus.svg"
+									alt="Google"
+									class="social-icon"
+								></a>
+							<a
+								href="#"
+								target="_blank"
+								class=" social-link w-inline-block"
+							><img
+									src="img/linkedin-logo.svg"
+									alt="LinkedIn"
+									class="social-icon"
+								></a>
+							<a
+								href="#"
+								target="_blank"
+								class=" social-link w-inline-block"
+							><img
+									src="img/twitter.svg"
+									alt="Twitter"
+									class="social-icon"
+								></a>
+							<a
+								href="#"
+								target="_blank"
+								class=" social-link w-inline-block"
+							><img
+									src="img/youtube.svg"
+									alt="YouTube"
+									class="social-icon"
+								></a>
+							<a
+								href="#"
+								target="_blank"
+								class=" social-link w-inline-block"
+							><img
+									src="img/rss-symbol.svg"
+									alt="RSS"
+									class="social-icon"
+								></a>
+						</div>
+						<div class="footer-text">Ⓒ Copyright 2019.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 
 </html>
