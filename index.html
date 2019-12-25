@@ -19,7 +19,7 @@
 	>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="https://unpkg.com/vue"></script>
-	<script src="./components/gif-grid.js"></script>
+	<script src="./components/Navigation.js"></script>
 	<link
 		rel="icon"
 		type="image/png"
@@ -83,176 +83,10 @@
 <body class="fade-out">
 	<div id="app">
 
-		<gif-grid></gif-grid>
+		<Navigation>
+		</Navigation>
 
-		<div
-			data-collapse="
-	medium"
-			data-animation="over-right"
-			data-duration="400"
-			class="navbar w-nav"
-		>
-			<a
-				href="index.html"
-				class="logo-block w-nav-brand w--current"
-			><img
-					src="/img/deepblasterlogo.svg"
-					alt=""
-					class="logo"
-				></a>
-			<div
-				class="menu-button w-nav-button"
-				id="js-menu-open"
-				onclick="document.getElementById('js-menu').classList.remove('hidden');document.getElementById('js-menu-open').classList.add('hidden');document.getElementById('js-menu-close').classList.remove('hidden');"
-			>
-				<svg
-					style="height: 32px;width: 100%;"
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="#fff"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="feather feather-menu"
-				>
-					<line
-						x1="3"
-						y1="12"
-						x2="21"
-						y2="12"
-					/>
-					<line
-						x1="3"
-						y1="6"
-						x2="21"
-						y2="6"
-					/>
-					<line
-						x1="3"
-						y1="18"
-						x2="21"
-						y2="18"
-					/></svg>
-			</div>
-			<div
-				class="menu-button w-nav-button hidden"
-				id="js-menu-close"
-				onclick="document.getElementById('js-menu').classList.add('hidden');document.getElementById('js-menu-close').classList.add('hidden');document.getElementById('js-menu-open').classList.remove('hidden');"
-			>
-				<svg
-					style="height: 32px;width: 100%;"
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="#fff"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="feather feather-menu"
-				>
-					<line
-						x1="3"
-						y1="12"
-						x2="21"
-						y2="12"
-					/>
-					<line
-						x1="3"
-						y1="6"
-						x2="21"
-						y2="6"
-					/>
-					<line
-						x1="3"
-						y1="18"
-						x2="21"
-						y2="18"
-					/></svg>
-			</div>
-			<div class="cta-nav-menu w-hidden-small w-hidden-tiny"><a
-					href="#"
-					class="nav-link cta-nav-link w-hidden-small w-hidden-tiny w-nav-link"
-					style="border:none"
-				>Sign
-					in</a><a
-					href="#"
-					class="nav-link cta-nav-link register w-nav-link"
-				>Sign up</a>
 
-				<a
-					href="index.html"
-					class="products-menu"
-					class=""
-				><img
-						src="/img/wannatalklogo-light.svg"
-						alt=""
-						class="logo"
-					></a>
-				<div class="products-menu--wrapper">
-					<a
-						href="index.html"
-						class="products-menu"
-						class=""
-					><img
-							src="/img/wannatalklogo-light.svg"
-							alt=""
-							class="logo"
-							style="filter:invert(0)!Important"
-						></a>
-					<a
-						href="#"
-						class="products-menu--link"
-					><img
-							src="/img/smile-face.svg"
-							alt=""
-							class="products-menu--logo"
-						>TeamJello</a>
-					<a
-						href="#"
-						class="products-menu--link"
-					><img
-							src="/img/smile-face.svg"
-							alt=""
-							class="products-menu--logo"
-						>Gloo</a>
-				</div>
-			</div>
-			<nav
-				role="navigation"
-				class="nav-menu w-clearfix w-nav-menu hidden lg:block"
-				id="js-menu"
-			>
-				<a
-					href="/"
-					class="nav-link w-nav-link w--current"
-				>Home</a>
-				<a
-					href="features.html"
-					class="nav-link w-nav-link"
-				>Features</a>
-				<a
-					href="pricing.html"
-					class="nav-link w-nav-link"
-				>Pricing</a>
-				<a
-					href="#"
-					target="_blank"
-					class="nav-link w-nav-link"
-				>Support</a>
-				<div class="cta-nav-menu w-hidden-main w-hidden-medium"><a
-						href="#"
-						class="nav-link cta-nav-link w-nav-link"
-					>Sign in</a><a
-						href="#"
-						class="nav-link cta-nav-link register w-nav-link"
-					>Sign up </a></div>
-			</nav>
-		</div>
 		<div class="website-wrapper">
 			<div class="hero-section">
 				<div class="medium-container w-container">
@@ -262,24 +96,23 @@
 							data-ix="fade-in-on-load-2"
 							style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"
 						>
-							<span class="font-thin text-4xl">Increase Sales </span> Salesbot.</h1>
+							<span class="font-thin text-4xl">LOGO AQUI</h1>
 						<p
 							class="hero-paragraph"
 							data-ix="fade-in-on-load-3"
 							style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"
 						>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam augue nunc, imperdiet ut
-							vestibulum id, pulvinar sed odio. Aenean faucibus erat ante, porttitor dictum augue
-							tincidunt eu. </p><a
+							Build Enterprise Web and Mobile Apps
+							With Near-Zero Coding. </p><a
 							href="#"
 							class="button w-inline-block"
 							data-ix="fade-in-on-load-4"
 							style="transition: transform 0.2s ease 0s, box-shadow 0.2s ease 0s, -webkit-transform 0.2s ease 0s, opacity 500ms ease 0s, transform 500ms ease 0s; opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px);"
 						>
-							<div class="button-title">Try it now</div>
+							<div class="button-title">Watch the video</div>
 						</a>
 					</div><img
-						src="img/hero-image.svg"
+						src="img/banner_bigpurplo2.png"
 						alt=""
 						class="hero-image"
 					>
@@ -336,12 +169,12 @@
 			<div class="section">
 				<div class="container w-container">
 					<div class="section-title-wrapper push-down">
-						<h2 class="section-title">Generate leads from Facebook, your website and social media</h2>
-						<div class="section-subtitle">Blast out e-bots instead of e-mail or SMS and achieve a 65%
-							CTR
+						<h2 class="section-title">Build the Enterprise Backend through Drag and Drop.</h2>
+						<div class="section-subtitle">Webforms, Workflows, Business Logic, .NET Scripting, Dashboards,
+							Reports
 						</div>
 						<img
-							src="img/section1.png"
+							src="img/imacrapid4.png"
 							alt=""
 							class="centered-illustration"
 						>
@@ -359,12 +192,10 @@
 				</div>
 				<div class="container w-container">
 					<div class="section-title-wrapper push-down">
-						<h2 class="section-title">Bots Qualify your leads and saves them to your CRM</h2>
-						<div class="section-subtitle">See how your team can structure work to turn all your goals
-							into
-							workable plans</div>
+						<h2 class="section-title">Then Generate the Mobile Frontend With a Click.</h2>
+						<div class="section-subtitle">Native iOS & Android, Offline Support, Multiuser Sync</div>
 						<img
-							src="img/section2.svg"
+							src="img/tabletdevices.png"
 							alt=""
 							class="centered-illustration"
 						>
@@ -375,7 +206,8 @@
 				</div>
 				<div class="container w-container">
 					<div class="section-title-wrapper push-down">
-						<h2 class="section-title">Pick from hundreds of templates or create your own chatflow</h2>
+						<h2 class="section-title">Enrich Your Apps With Plugins</h2>
+						<div class="section-subtitle">Explore the Community-driven RapidStore</div>
 						<div class="press-wrapper">
 							<div class="press-row w-row">
 								<div class="press-column w-col w-col-4 w-col-small-6 w-col-tiny-6">
@@ -406,7 +238,7 @@
 							</div>
 						</div>
 						<img
-							src="img/section3.png"
+							src="img/gmapbig.png"
 							alt=""
 							class="centered-illustration"
 						>
@@ -646,7 +478,7 @@
 		const app = new Vue({
 			el: '#app',
 			components: {
-				"gif-grid": GifGrid
+				"Navigation": Navigation
 			},
 			data: {
 
