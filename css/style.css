@@ -80,7 +80,8 @@ label {
 
 .w-container .w-row {
     margin-left: -10px;
-    margin-right: -10px
+    margin-right: -10px;
+    display:flex;
 }
 
 .w-col {
@@ -946,7 +947,7 @@ a {
 .footer-link {
     display: block;
     margin-top: 13px;
-    color: #dae4f3;
+    color: #fff;
     font-size: 15px;
     text-decoration: none
 }
@@ -989,9 +990,6 @@ a {
     margin-bottom: 20px
 }
 
-.footer-small-link {
-    color: #bbc6da
-}
 
 .company-logo {
     display: block;
@@ -2657,9 +2655,7 @@ a {
     margin-bottom: 20px
 }
 
-.footer-small-link {
-    color: #bbc6da
-}
+
 
 .footer-small-link:hover {
     color: #fff
@@ -3128,6 +3124,7 @@ label {
 .w-container .w-row {
     margin-left: -10px;
     margin-right: -10px
+    display:flex;
 }
 
 .w-col {
@@ -4008,7 +4005,7 @@ a {
     margin-right: 10px
 }
 
-.footer-link:hover {
+.footer-link:hover,.footer-small-link:hover {
     color: #fff;
     text-decoration: underline
 }
@@ -4040,9 +4037,6 @@ a {
     margin-bottom: 20px
 }
 
-.footer-small-link {
-    color: #bbc6da
-}
 
 .company-logo {
     display: block;
@@ -5711,9 +5705,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff965a', end
     margin-bottom: 20px
 }
 
-.footer-small-link {
-    color: #bbc6da
-}
+
 
 .footer-small-link:hover {
     color: #fff
