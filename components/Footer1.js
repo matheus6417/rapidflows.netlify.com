@@ -72,11 +72,13 @@ const Footer1 = {
             </div>
           
             <div class="bottom-footer-block">
-              <div class="footer-text">Copyright (C) 2015 Blynk Pte Ltd. All Rights Reserved</div><br><a
+              <div><div class="footer-text">Copyright (C) 2015 Blynk Pte Ltd. All Rights Reserved</div><br><a
                 href="/privacy"
                 class="footer-small-link"
               >Blynk Offices Worldwide</a>
             </div>
+              <div>Singapore</div>
+              </div>
           </div>
         </div>
       </div>

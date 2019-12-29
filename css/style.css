@@ -1169,7 +1169,11 @@ a {
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, .1);
     font-size: 12px;
-    text-align: left
+    text-align: left;
+    width: 100%;
+    display:flex;
+    justify-content: space-between
+    
 }
 
 .social-buttons-wrapper {
