@@ -592,7 +592,7 @@ a {
     width: 400px;
     margin-bottom: 30px;
     font-size: 17px;
-    line-height: 25px;
+    line-height: 35px;
     font-weight: 300;
     color: #fff
 }
@@ -1091,7 +1091,6 @@ a {
 .press-wrapper {
     position: relative;
     z-index: 20;
-    max-width: 400px;
     margin: 60px auto 0
 }
 
@@ -3643,9 +3642,9 @@ a {
     width: 400px;
     margin-bottom: 30px;
     font-size: 17px;
-    line-height: 25px;
+    line-height: 36px;
     font-weight: 300;
-    color: #fff
+    color: #fff;
 }
 
 .button {
@@ -4142,7 +4141,6 @@ a {
 .press-wrapper {
     position: relative;
     z-index: 20;
-    max-width: 400px;
     margin: 60px auto 0
 }
 

@@ -1,5 +1,5 @@
 
-const Footer1 = {
+const FooterBottom = {
     template: `
       <div>
           <div class="section footer">
@@ -77,7 +77,12 @@ const Footer1 = {
                 class="footer-small-link"
               >Blynk Offices Worldwide</a>
             </div>
-              <div>Singapore</div>
+              <div>
+                Singapore
+              <img
+						src="img/singapore-flag.png"
+					>
+              </div>
               </div>
           </div>
         </div>

@@ -82,7 +82,15 @@ input[type=checkbox] {
     box-sizing: border-box;
     padding: 0;
 }
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
 
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
 @font-face {
     font-family: 'Radikal';
     src: url('../fonts/Radikal-UltraThin.otf') format('opentype'), url('../fonts/Radikal-Thin.otf') format('opentype');

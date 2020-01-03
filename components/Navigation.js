@@ -152,12 +152,11 @@ const Navigation = {
                   class="nav-link w-nav-link"
                 >Features</a>
                 <a
-                  href="pricing.html"
+                  href="bap.html"
                   class="nav-link w-nav-link"
                 >Partner with Blynk</a>
                 <a
-                  href="#"
-                  target="_blank"
+                  href="rapidstore.html"
                   class="nav-link w-nav-link"
                 >RapidStore</a>
                 <!-- <div class="cta-nav-menu w-hidden-main w-hidden-medium"><a
