@@ -53,6 +53,11 @@ h2{
 	.w-container{
 		max-width:728px
 }
+
+.apps-community .press-block{
+	margin-bottom:20px;
+	max-width:100%
+}
 }
 @media screen and (max-width:479px){
 	.w-container{
@@ -125,10 +130,23 @@ a{
 	align-items: center;
 	text-align: center;
 	min-width: 120px;
+
+	    transition: 300ms;
 }
 .intro-nav-link-block:hover{
-	background-color:#16366e;
-	color:#fff
+
+	color:#fff;
+	background: #ff965a;
+    background: -webkit-gradient(linear,left top,right top,from(#ff965a),color-stop(50%,#ff7559),to(#ff5959));
+    background: linear-gradient(to right,#ff965a 0,#ff7559 50%,#ff5959 100%);
+    transition:300ms;
+}
+.intro-nav-link-block.w-inline-block:focus{
+	color:#fff;
+	background: #ff965a;
+    background: -webkit-gradient(linear,left top,right top,from(#ff965a),color-stop(50%,#ff7559),to(#ff5959));
+    background: linear-gradient(to right,#ff965a 0,#ff7559 50%,#ff5959 100%);
+    transition:300ms;
 }
 .intro-nav-link-block.w--current{
 	background:#ff965a;
@@ -262,8 +280,8 @@ html.w-mod-js [data-ix=fade-in-button-1],html.w-mod-js [data-ix=fade-in-button-2
 		border-radius:0
 }
 	.intro-nav-icon{
-		/* width:30px; */
-		/* height:22px; */
+		width:30px;
+		height:22px;
 }
 	.intro-nav-title{
 		top:0;
@@ -398,7 +416,8 @@ p{
 .bg-circle.medium.how-it-works-2{
 	left:auto;
 	top:314px;
-	right:20px
+	right:20px;
+	z-index: 0;
 }
 .bg-circle.medium.platform-2{
 	left:-9px;
@@ -416,7 +435,8 @@ p{
 .bg-circle.small.how-it-works-3{
 	left:auto;
 	top:265px;
-	right:-25px
+	right:-25px;
+	z-index: 0;
 }
 .bg-circle.small.platform-3{
 	left:-71px;
@@ -438,7 +458,8 @@ p{
 .bg-circle.how-it-works{
 	left:auto;
 	top:376px;
-	right:-125px
+	right:-125px;
+	z-index: 0;
 }
 .bg-circle.platform-intro-1{
 	top:-62px;
@@ -2565,7 +2586,7 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 	width:830px;
 	z-index:99;
 	margin:30px auto -37px;
-	position:relative
+	position:relative;
 }
 html.w-mod-js [data-ix=fade-in-on-load]{
 	opacity:0;
@@ -3407,9 +3428,9 @@ label{
 }
 .w-nav-link{
 	display:inline-block;
-	color:#fff;
+	color: #000000d9;
 	padding:20px;
-	text-align:left
+	text-align:left;
 }
 .w-nav-link.w--current{
 	color:#0082f3
@@ -3463,7 +3484,7 @@ a{
 	padding-right:90px;
 	padding-left:55px;
 	border-bottom:none;
-	background-color:transparent
+	background-color: #ffffffcf;
 }
 .container,.hero-section{
 	position:relative;
@@ -3477,12 +3498,15 @@ a{
 .logo{
 	width:auto;
 	height:32px;
-	margin-top:7px
+	margin-top:7px;
+	filter: invert(1);
 }
 .nav-menu{
 	margin-top:-1px;
 	border-radius:25px;
-	background-color:transparent
+	background-color:transparent;
+	height: 100%;
+	padding-top: 5px;
 }
 .menu-button{
 	-webkit-transition:all .2s ease;
@@ -3501,8 +3525,8 @@ a{
 	color:#4f73b8
 }
 .nav-link.w--current{
-	border-bottom-color:#fff;
-	color:#fff
+	border-bottom-color: #000000d9;
+	color: #000000d9;
 }
 .nav-link.cta-nav-link{
 	color:#fff
@@ -3763,7 +3787,8 @@ a{
 	z-index: -1;
 	width:300px;
 	height:300px;
-	border-color:#f5f7fa;
+	border-color: #ededed;
+	z-index: 0;
 }
 .bg-circle.large.bottom-left{
 	left:-210px;
@@ -3774,12 +3799,12 @@ a{
 .bg-circle.large-light{
 	left:-555px;
 	top:340px;
-	z-index:4;
+	/* z-index:4; */
 	width:600px;
 	height:600px;
 	border-width:130px;
 	border-color:rgba(7,38,93,.04);
-	opacity:1
+	opacity:1;
 }
 .bg-circle.company-1{
 	left:auto;
@@ -3807,7 +3832,7 @@ a{
 }
 .section-subtitle{
 	display:block;
-	max-width:770px;
+	max-width: 888px;
 	margin-top:10px;
 	margin-right:auto;
 	margin-left:auto;
@@ -3878,10 +3903,10 @@ a{
 	float:right
 }
 .benefit-title{
-	margin-bottom:30px;
-	font-size:36px;
+	margin-bottom: 24px;
+	font-size: 33px;
 	line-height:40px;
-	font-weight:500
+	font-weight:500;
 }
 .color-intro-title{
 	margin-bottom:10px;
@@ -4271,7 +4296,9 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 }
 	.hero-image{
 		top:0;
-		height:390px
+		height:390px;
+		left: 0;
+		right: 0;
 }
 	.hero-text-block{
 		width:470px
@@ -4529,9 +4556,10 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 	.hero-image{
 		position:relative;
 		display:block;
-		width:75%;
+		/* width: 50%; */
 		height:auto;
-		margin:47px 0 0 -8%
+		margin: auto;
+		margin-top: 60px;
 }
 	.benefit-image,.benefit-text-block,.benefit-text-block.right,.hero-text-block{
 		margin-right:auto;
@@ -4909,10 +4937,12 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 		line-height:20px
 }
 	.hero-image{
-		width:100%;
-		display:block;
-		margin:25px 0 0;
-		position:static
+		display: block;
+		/* margin: 0 50%; */
+		margin-top: 50px;
+		align-items: center;
+		height: auto;
+		width: 100%;
 }
 }
 .hero-logo,.hero-logos{
@@ -4954,7 +4984,7 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 	border:20px solid #ff975a;
 	border-radius:100%;
 	background-color:transparent;
-	z-index: -1;
+	/* z-index: -1; */
 }
 .bg-circle.medium{
 	left:-10px;
@@ -5035,8 +5065,8 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 	display:block;
 	width:830px;
 	z-index:99;
-	margin:30px auto -37px;
-	position:relative
+	margin: 30px auto 0;
+	position:relative;
 }
 html.w-mod-js [data-ix=fade-in-on-load]{
 	opacity:0;
@@ -5220,7 +5250,7 @@ p{
 	margin-right:auto;
 	max-width: 1100px;
 }
-@media screen and (max-width:991px){
+@media screen and (max-width: 991px){
 	.w-container{
 		max-width:728px
 }
@@ -5260,6 +5290,7 @@ a{
 	display:block
 }
 .section{
+
 	background-color:#fff
 }
 .container{
@@ -5821,4 +5852,49 @@ a{
 	height:32px;
 	display:inline-block;
 	margin-right:10px
+}
+.section.tint {
+    background-color: #f4f5f8;
+}
+svg.bgimg {
+    position: absolute;
+    fill: #ff975a61;
+    /* bottom: 0; */
+    transform: translateY(-102px);
+    left: 0;
+    right: auto;
+}
+
+.press-row.w-row.p-5 {
+    filter: contrast(0.5);
+    max-width: 1000px;
+    margin: auto;
+    min-width: 800px;
+    height: 100px;
+}
+
+.apps-community {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apps-community .press-block {
+    max-width: 30%;
+}
+
+.apps-community .press-block img {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 991px){
+	.apps-community{
+		flex-direction:column;
+		max-width:100%
+	}
+	.apps-community .press-block{
+		margin-bottom:20px;
+		max-width:100%;
+		text-align: center;
+		display: flex;
+	}
 }
