@@ -1,141 +1,142 @@
 ﻿b,
 label {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    height: 100%;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    min-height: 100%;
-    overflow: auto;
+  margin: 0;
+  min-height: 100%;
+  overflow: auto;
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 nav {
-    display: block;
+  display: block;
 }
 
 a {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 a:active,
 a:hover {
-    outline: 0;
+  outline: 0;
 }
 
 h1 {
-    margin: .67em 0;
+  margin: 0.67em 0;
 }
 
 img {
-    border: 0;
-    max-width: 100%;
-    vertical-align: middle;
-    display: inline-block;
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 button,
 input {
-    color: inherit;
-    font: inherit;
-    margin: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
 }
 
 button {
-    overflow: visible;
+  overflow: visible;
 }
 
 button {
-    text-transform: none;
+  text-transform: none;
 }
 
 html input[disabled] {
-    cursor: default;
+  cursor: default;
 }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 input {
-    line-height: normal;
+  line-height: normal;
 }
 
-input[type=checkbox] {
-    box-sizing: border-box;
-    padding: 0;
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
 }
 body {
-    opacity: 1;
-    transition: 1s opacity;
+  opacity: 1;
+  transition: 1s opacity;
 }
 
 body.fade-out {
-    opacity: 0;
-    transition: none;
+  opacity: 0;
+  transition: none;
 }
 @font-face {
-    font-family: 'Radikal';
-    src: url('../fonts/Radikal-UltraThin.otf') format('opentype'), url('../fonts/Radikal-Thin.otf') format('opentype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Radikal';
-    src: url('../fonts/Radikal-Black.otf') format('opentype');
-    font-weight: 900;
-    font-style: normal;
+  font-family: "Radikal";
+  src: url("../fonts/Radikal-UltraThin.otf") format("opentype"),
+    url("../fonts/Radikal-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Radikal';
-    src: url('../fonts/Radikal-Regular.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Radikal";
+  src: url("../fonts/Radikal-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Radikal';
-    src: url('../fonts/Radikal-Light.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Radikal";
+  src: url("../fonts/Radikal-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Radikal';
-    src: url('../fonts/Radikal-Bold.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Radikal";
+  src: url("../fonts/Radikal-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Radikal';
-    src: url('../fonts/Radikal-Medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Radikal";
+  src: url("../fonts/Radikal-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Radikal';
-    src: url('../fonts/Radikal-RegularItalic.otf') format('opentype');
-    font-weight: 400;
-    font-style: italic;
+  font-family: "Radikal";
+  src: url("../fonts/Radikal-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Radikal";
+  src: url("../fonts/Radikal-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
 }
