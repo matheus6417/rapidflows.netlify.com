@@ -1,49 +1,46 @@
 
 const FooterBottom = {
-    template: `
+  template: `
       <div>
           <div class="section footer">
           <div class="main-container w-container">
             <div class="footer-row w-clearfix">
               <div class="footer-column">
-                <div class="footer-title">Rapid4 Features</div><a
-                  href="#"
+                <div class="footer-title">Rapid5 Features</div><a
+                  href="/features.html#Webforms"
                   class="footer-link"
                 >Webforms</a><a
-                  href="#"
+                  href="/features.html#Workflows"
                   class="footer-link"
                 >Workflows</a><a
-                  href="#"
+                  href="/features.html#Listings"
                   class="footer-link"
                 >Views</a><a
-                  href="#"
+                  href="/features.html#Reports"
                   class="footer-link"
                 >Reports</a><a
-                  href="#"
+                  href="/features.html#Apps"
                   class="footer-link"
                 >RapidMobile</a>
               </div>
               <div class="footer-column">
                 <div class="footer-title">From the RapidStore</div><a
-                  href="#"
-                  target="_blank"
+                  href="/rapidstore.html"
                   class="footer-link"
                 >Featured Apps</a>
               </div>
               <div class="footer-column">
               <div class="footer-title">Partner with Blynk</div><a
-                  href="#"
-                  target="_blank"
+                  href="/bap.html"
+                  
                   class="footer-link"
                 >Blynk Alliance Program Apps</a>
                 <a
-                  href="#"
-                  target="_blank"
+                  href="/blynkplus.html"
                   class="footer-link"
                 >BlynkAMP</a>
                 <a
-                  href="#"
-                  target="_blank"
+                  href="/blynkresources.html"
                   class="footer-link"
                 >Technical Resources</a>
               </div>
@@ -73,7 +70,7 @@ const FooterBottom = {
           
             <div class="bottom-footer-block">
               <div><div class="footer-text">Copyright (C) 2015 Blynk Pte Ltd. All Rights Reserved</div><br><a
-                href="/privacy"
+                href="/blynkoffices.html"
                 class="footer-small-link"
               >Blynk Offices Worldwide</a>
             </div>
@@ -88,4 +85,4 @@ const FooterBottom = {
         </div>
       </div>
     `
-  };
+};

@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Blynk Rapid5 - Build Enterprise Web and Mobile Apps</title>
+
+	<meta
+		content=""
+		name="description"
+	>
+	<meta
+		content="width=device-width, initial-scale=1"
+		name="viewport"
+	>
+	<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="/apple-touch-icon.png"
+	>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="./components/Navigation.js"></script>
+	<script src="./components/FooterBottom.js"></script>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="/favicon-32x32.png"
+	>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="16x16"
+		href="/favicon-16x16.png"
+	>
+	<link
+		rel="manifest"
+		href="/site.webmanifest"
+	>
+	<link
+		href="css/base.css"
+		rel="stylesheet"
+		type="text/css"
+	>
+	<link
+		href="css/style.css"
+		rel="stylesheet"
+		type="text/css"
+	>
+	<link
+		href="css/utils.css"
+		rel="stylesheet"
+		type="text/css"
+	>
+
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="css/all-ie-only.css"
+	/>
+
+
+
+</head>
+
+<body class="fade-out">
+	<div id="app">
+		<Navigation>
+		</Navigation>
+		<div class="subpage-header pricing pb-0">
+			<div class="medium-container w-container">
+				<div class="subpage-text-block pricing-block">
+					<h1
+						class="hero-title subtitle"
+						style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"
+					>
+						<img
+							class="m-auto "
+							style="width: 400px;"
+							src="img/blynkamp.png"
+						>
+					</h1>
+					<h1
+						class="subpage-title subtitle pricing-subtitle"
+						data-ix="fade-in-on-load-2"
+						style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"
+					>Annual Maintenance Program (AMP) Providing the Best Care possible for
+						your Rapid4 suite.</h1>
+				</div>
+				<div class="bg-object subpage-intro"></div>
+
+			</div>
+		</div>
+
+		<div class="section ">
+			<div class="main-container w-container">
+
+				<div class="features-row-wrapper">
+					<div
+						class="platform-features-row w-row "
+						style="display: block;"
+					>
+						<div class="features-column w-col w-col-4 hidden md:block">
+							<img
+								src="img/amp.png"
+								alt=""
+							>
+						</div>
+						<div class="features-column w-col w-col-4 pt-24">
+							<div class="icon-feature-block _3 h-48">
+								<div class="feature-title">24/7 Responsive
+									Support Team<br></div>
+								<p>Service Level-based Local Support
+									Remote Support for Software</p>
+							</div>
+							<div class="icon-feature-block _3 h-48">
+								<div class="feature-title">Free Software
+									Upgrades</div>
+								<p>Enjoy major software upgrades
+									Early Bird Preview of new releases</p>
+							</div>
+						</div>
+						<div class="features-column w-col w-col-4 md:pt-24">
+							<div class="icon-feature-block _3 h-48">
+								<div class="feature-title">Online Support
+									Portal & Helpdesk</div>
+								<p>Online Support Portal
+									Ticket-based Helpdesk</p>
+							</div>
+							<div class="icon-feature-block _3 h-48">
+								<div class="feature-title">Cloud Hosting
+									Options</div>
+								<p>Cloud Hosting Available
+									Automated Backup Services
+								</p>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<Footer-Bottom>
+		</Footer-Bottom>
+	</div>
+	<script>
+		const app = new Vue({
+			el: '#app',
+			components: {
+				"Navigation": Navigation,
+				"FooterBottom": FooterBottom
+			},
+			data: {
+			},
+			methods: {
+			},
+			mounted: function () {
+				document.querySelector('body').classList.remove("fade-out");
+			}
+		});
+	</script>
+	<style>
+		.section.our-mission {
+			overflow: visible;
+			padding-top: 80px;
+			padding-bottom: 90px;
+			background-color: #07265d;
+			color: #fff;
+		}
+
+		.bg-circle.large-light.mission {
+			left: auto;
+			top: 65px;
+			right: -136px;
+			z-index: 2;
+			border-color: hsla(0, 0%, 100%, .65);
+			opacity: .05;
+		}
+
+
+
+		.pricing-column-title {
+			color: #216ef4;
+			font-size: 33px;
+			font-weight: 500;
+		}
+
+		.pricing-title-text {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 28px;
+			font-weight: 500;
+		}
+
+		.small-pricing-text {
+			display: block;
+			font-size: 14px;
+		}
+
+		.pricing-features-title {
+			display: block;
+			margin-right: 10px;
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		.payroll-hide-link,
+		.payroll-view-link {
+			display: inline-block;
+			color: #216ef4;
+			text-decoration: none;
+		}
+
+		.pricing-features-title.pricing-title {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+
+		.hidden-features-block {
+			overflow: hidden;
+		}
+
+		.hidden-feature-item {
+			margin-top: 2px;
+			padding-left: 25px;
+			background-position: 0 50%;
+			background-size: 12px;
+		}
+
+		.hidden-feature-item.first {
+			margin-top: 15px;
+		}
+
+		.add-ons-main-wrapper {
+			position: relative;
+			margin-top: 130px;
+			padding-left: 0;
+		}
+
+		.add-on-block {
+			position: relative;
+			padding: 40px 250px 40px 40px;
+			background-color: rgba(33, 110, 244, .05);
+		}
+
+		.add-on-paragraph {
+			margin-top: 20px;
+		}
+
+		.add-on-prices-wrapper {
+			position: absolute;
+			left: auto;
+			top: 40px;
+			right: 30px;
+			bottom: auto;
+			z-index: 10;
+			width: 150px;
+		}
+
+		.pricing-switch-wrapper {
+			padding-bottom: 35px;
+		}
+
+		.pricing-switch-wrapper.add-ons-version {
+			position: static;
+			margin-top: 30px;
+			padding: 0;
+		}
+
+		.pricing-switch-block {
+			position: relative;
+			overflow: hidden;
+			width: 210px;
+			padding-left: 0;
+			border-radius: 50px;
+			background-color: rgba(33, 110, 244, .05);
+		}
+
+		.pricing-switch-link-block {
+			position: relative;
+			width: 50%;
+			float: left;
+			color: #515b6d;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.pricing-switch-link-block:hover {
+			color: #000;
+		}
+
+		.month-switch-bg-block,
+		.year-switch-bg-block {
+			top: 0;
+			right: 0;
+			bottom: auto;
+			background-color: #07265d;
+			color: #fff;
+			left: 0;
+		}
+
+		.pricing-switch-title {
+			position: relative;
+			z-index: 10;
+			display: inline-block;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
+		.month-switch-bg-block {
+			position: absolute;
+			z-index: 20;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		.year-switch-bg-block {
+			position: absolute;
+			z-index: 10;
+		}
+
+		.pricing-title {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 28px;
+			font-weight: 500;
+		}
+
+		html.w-mod-js [data-ix=hide-features-block] {
+			display: none;
+			height: 0;
+		}
+
+		html.w-mod-js [data-ix=hide-features-block-payroll],
+		html.w-mod-js [data-ix=hide-pricing-bg-block],
+		html.w-mod-js [data-ix=hide-month-pricing-block] {
+			display: none;
+		}
+
+		@media (max-width:991px) {
+			.section-title-wrapper {
+				margin-bottom: 50px;
+			}
+
+			.section-title-wrapper.add-ons-title-wrapper {
+				width: 190px;
+			}
+
+			.section-title {
+				font-size: 44px;
+				line-height: 50px;
+			}
+
+			.pricing-column-title {
+				font-size: 29px;
+			}
+
+			.small-pricing-text {
+				font-size: 11px;
+				line-height: 22px;
+			}
+
+			.hidden-feature-item.first {
+				margin-top: 10px;
+			}
+
+			.add-ons-main-wrapper {
+				margin-top: 90px;
+				padding-left: 0;
+			}
+
+			.add-on-block {
+				padding: 30px;
+				font-size: 14px;
+				line-height: 22px;
+			}
+
+			.add-on-prices-wrapper {
+				position: static;
+				width: 100%;
+				margin-top: 20px;
+			}
+
+			.pricing-switch-block {
+				width: 160px;
+			}
+
+			.pricing-switch-link-block {
+				font-size: 13px;
+			}
+		}
+
+		@media (max-width:767px) {
+			.section-title-wrapper.add-ons-title-wrapper {
+				position: static;
+				width: 100%;
+				text-align: center;
+			}
+
+			.section-title {
+				font-size: 40px;
+			}
+
+			.add-ons-main-wrapper {
+				padding-left: 0;
+			}
+
+			.small-pricing-text {
+				font-size: 12px;
+			}
+
+			.pricing-features-title.pricing-title {
+				margin-bottom: 20px;
+			}
+
+			.add-ons-main-wrapper {
+				margin-top: 70px;
+			}
+
+			.pricing-switch-wrapper {
+				margin-top: 25px;
+				padding-bottom: 0;
+			}
+
+			.pricing-switch-block {
+				margin-right: auto;
+				margin-left: auto;
+			}
+		}
+
+		@media (max-width:479px) {
+			.section-title {
+				font-size: 35px;
+				line-height: 42px;
+			}
+
+			.section-subtitle {
+				max-width: 770px;
+				margin-top: 20px;
+				font-size: 18px;
+				line-height: 27px;
+			}
+
+			.add-on-block {
+				font-size: 13px;
+			}
+
+			.add-on-prices-wrapper {
+				margin-top: 30px;
+			}
+		}
+	</style>
+</body>
+
+</html>
