@@ -1251,7 +1251,7 @@ a{
 }
 .bg-object{
 	position: absolute;
-	left: -120px;
+	left: 0px;
 	top: -180px;
 	z-index: 1;
 	opacity: 0.13;
@@ -5020,7 +5020,8 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 	z-index:10;
 	width:520px;
 	float: none;
-	text-align: left;
+	text-align: center;
+	margin: auto;
 }
 .subpage-text-block.centered.security{
 	width:660px
@@ -5034,10 +5035,10 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 	font-weight:500
 }
 .subpage-title.subtitle{
-	margin-top:30px;
+	margin-top: 12px;
 	color:#07265d;
 	font-size:33px;
-	line-height:49px
+	line-height:49px;
 }
 .subpage-title.subtitle.small-subtitle{
 	margin-top:25px;
