@@ -1037,7 +1037,8 @@ a{
 .logo-block{
 	display:block;
 	height:30px;
-	width:auto
+	width:auto;
+	opacity: 0.9;
 }
 .logo{
 	width:auto;
@@ -4241,26 +4242,32 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 		margin-top:4px
 }
 	.nav-menu{
-		min-width:300px;
-		margin-top:0;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		/* position: fixed; */
+		flex-direction: column;
 		margin-left:50px;
 		padding:13px 21px;
 		background-color:#fff;
 		background-color:rgba(255,255,255,.9);
 		-webkit-box-shadow:0 0 30px 0 rgba(0,0,0,.3);
-		box-shadow:0 0 30px 0 rgba(0,0,0,.3)
+		box-shadow:0 0 30px 0 rgba(0,0,0,.3);
 }
 	.nav-link{
 		margin-left:0;
-		padding:10px 20px 10px 30px;
+		padding:0px 20px 10px 30px;
 		font-size:16px;
+		width:100%;
 		line-height:32px;
 		color:#000
+
 }
 	.nav-link.w--current{
 		border-bottom-color:#000;
 		background-color:transparent;
-		color:#000
+		color:#000;
+		width: 100%;
 }
 	.nav-link.cta-nav-link{
 		margin-left:20px;
@@ -6089,4 +6096,20 @@ html.w-mod-js [data-ix=zoom-fade-in],html.w-mod-js [data-ix=zoom-fade-in-2],html
 .stat-block{min-height:0;padding:30px 25px;border-top:2px solid #fff;}
 .stat-block-title{line-height:40px;}
 .stat-column{padding-top:0;}
+}
+
+
+/*! CSS Used from: Embedded */
+.backwin{display:none;position:fixed;_position:absolute;height:100%;width:100%;top:0;left:0;background:#000000;z-index:200;opacity:0.8;}
+/*! CSS Used from: Embedded */
+.backwin2{display:none;position:fixed;_position:absolute;height:100%;width:100%;top:0;left:0;z-index:998;}
+.midposfrm{position:absolute;left:50%;top:50%;margin-left:-500px;margin-top:-281px;z-index:999;}
+@media (max-width:479px){
+	iframe#ifrmmain{
+		max-width: 100vw;
+		left: 0;
+		margin: 0;
+		height: auto;
+	}
+
 }

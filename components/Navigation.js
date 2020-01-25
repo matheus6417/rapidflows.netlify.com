@@ -1,6 +1,16 @@
 
 const Navigation = {
-    template: `
+  data: function () {
+    return {
+    }
+  },
+  methods: {
+    page(term) {
+      let url = window.location.href.includes(term)
+      return url
+    }
+  },
+  template: `
       <div>
               <div
               data-collapse="medium"
@@ -12,7 +22,7 @@ const Navigation = {
                 href="index.html"
                 class="logo-block w-nav-brand w--current"
               ><img
-                  src="/img/blogo.png"
+                  src="/img/blogo.svg"
                   
                   class="logo"
                 ></a>
@@ -144,18 +154,19 @@ const Navigation = {
                 id="js-menu"
               >
                 <a
+                :class="{'w--current':page(null)}"
                   href="/"
-                  class="nav-link w-nav-link w--current"
+                  class="nav-link w-nav-link"
                 >Home</a>
-                <a
+                <a :class="{'w--current':page('features')}"
                   href="features.html"
                   class="nav-link w-nav-link"
-                >Features</a>
-                <a
+                >Features </a>
+                <a :class="{'w--current':page('bap')}"
                   href="bap.html"
                   class="nav-link w-nav-link"
                 >Partner with Blynk</a>
-                <a
+                <a :class="{'w--current':page('rapidstore')}"
                   href="rapidstore.html"
                   class="nav-link w-nav-link"
                 >RapidStore</a>
@@ -170,4 +181,4 @@ const Navigation = {
             </div> 
       </div>
     `
-  };
+};

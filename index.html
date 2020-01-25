@@ -77,7 +77,7 @@
 							<img
 								class="m-auto sm:ml-0"
 								style="width: 220px"
-								src="img/rapid4logotrans.png"
+								src="img/rapid4logotrans.svg"
 							>
 						</h1>
 						<p
@@ -88,12 +88,15 @@
 							With Near-Zero Coding.
 						</p>
 						<a
+							@click.stop="videolayer = true"
 							href="#"
 							class="button w-inline-block"
 							style="transition: transform 0.2s ease 0s, box-shadow 0.2s ease 0s, -webkit-transform 0.2s ease 0s, opacity 500ms ease 0s, transform 500ms ease 0s; opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px);"
 						>
 							<div class="button-title">Watch the video</div>
+
 						</a>
+
 					</div><img
 						src="img/banner_bigpurplo2.png"
 						class="hero-image"
@@ -345,7 +348,7 @@
 						style="
 								width: 220px;
 							"
-						src="img/rapid4logo2.png"
+						src="img/rapid4logo2.svg"
 					><a
 						href="#"
 						class="button w-inline-block"
@@ -357,6 +360,34 @@
 		</div>
 		<Footer-Bottom>
 		</Footer-Bottom>
+		<div
+			v-if="videolayer"
+			style="z-index: 999999;"
+		>
+			<div
+				@click.stop="videolayer = false"
+				class="backwin"
+				id="backgroundPopup"
+				style="display: block;"
+			>
+			</div>
+			<div
+				class="backwin2"
+				id="bPopup2"
+				style="display: block;"
+				@click.stop="videolayer = false"
+			>
+				<iframe
+					id="ifrmmain"
+					class="midposfrm"
+					width="1000"
+					height="562"
+					src="https://www.youtube.com/embed/DrxzyflMh_c"
+					frameborder="0"
+					allowfullscreen=""
+				></iframe>
+			</div>
+		</div>
 	</div>
 	<script>
 		const app = new Vue({
@@ -366,6 +397,7 @@
 				"FooterBottom": FooterBottom
 			},
 			data: {
+				videolayer: false
 			},
 			methods: {
 			},

@@ -47,21 +47,19 @@ const FooterBottom = {
               <div class="footer-column">
               <div class="footer-title">About Blynk</div><a
                   href="#"
-                  target="_blank"
                   class="footer-link"
                 >The Blynk Team</a>
                 <a
-                  href="#"
-                  target="_blank"
+                  href="/blynkoffices.html"
                   class="footer-link"
                 >Contact Us</a>
                 <a
-                  href="#"
+                  href="https://twitter.com/BlynkNow"
                   target="_blank"
                   class="footer-link"
                 >Twitter Feed</a>
                 <a
-                  href="#"
+                  href="http://blynkblog.blogspot.com/"
                   target="_blank"
                   class="footer-link"
                 >Blynk Blog</a>
