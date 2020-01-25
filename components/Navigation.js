@@ -13,7 +13,7 @@ const Navigation = {
                 class="logo-block w-nav-brand w--current"
               ><img
                   src="/img/blogo.png"
-                  alt=""
+                  
                   class="logo"
                 ></a>
               <div
@@ -106,7 +106,7 @@ const Navigation = {
                   class="products-menu"
                 ><img
                     src="/img/wannatalklogo-light.svg"
-                    alt=""
+                    
                     class="logo"
                   ></a>
                 <div class="products-menu--wrapper">
@@ -116,7 +116,7 @@ const Navigation = {
                     
                   ><img
                       src="/img/wannatalklogo-light.svg"
-                      alt=""
+                      
                       class="logo"
                       style="filter:invert(0)!Important"
                     ></a>
@@ -125,7 +125,7 @@ const Navigation = {
                     class="products-menu--link"
                   ><img
                       src="/img/smile-face.svg"
-                      alt=""
+                      
                       class="products-menu--logo"
                     >TeamJello</a>
                   <a
@@ -133,7 +133,7 @@ const Navigation = {
                     class="products-menu--link"
                   ><img
                       src="/img/smile-face.svg"
-                      alt=""
+                      
                       class="products-menu--logo"
                     >Gloo</a>
                 </div>
