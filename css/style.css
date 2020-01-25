@@ -4687,7 +4687,10 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 		width:50%
 }
 	.cta-info-block{
-		max-width:100%
+		max-width:100%;
+		text-align: center;
+		display: flex;
+		align-items: center;
 }
 	.press-block{
 		height:200px
@@ -4887,6 +4890,11 @@ html.w-mod-js [data-ix=fade-in-on-load-3],html.w-mod-js [data-ix=fade-in-on-load
 	.company-logo,.company-logo.medium{
 		padding-right:25px;
 		padding-left:25px
+}
+
+.apps-wrapper .company-logo{
+	padding: 0;
+	width: auto;
 }
 	.company-logo{
 		width:100%;
@@ -5433,7 +5441,7 @@ a{
 		padding:90px 60px
 }
 	.section.footer{
-		padding-bottom:70px
+		padding-bottom:70px;
 }
 }
 @media (max-width:767px){
